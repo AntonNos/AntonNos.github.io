@@ -1,10 +1,9 @@
-var name = "Олег";
-var time = "завтра о другій годині";
-var place = "в центрі міста.";
-var event = prompt("Ваша улюблена справа?");
+var name = "John";
+var time = "at 8 o'clock";
+var place = "at home";
+var event = prompt("What do you like to do in your free time?");
 while (event === "") {
-    alert("Поле пусте!");
-    event = prompt("Ваша улюблена справа?");
+    alert("field is empty");
+    event = prompt("What do you like to do in your free time?", "eating");
 }
-console.log(name, time, "буде", event, place);
-
+console.log(name, "will be ", event, time, place);
