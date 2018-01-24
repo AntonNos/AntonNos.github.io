@@ -1,17 +1,9 @@
-var name = prompt("Введіть ваше ім'я");
-while (name === "") {
-    alert("Ви не ввели ім'я");
-    var name = prompt("Введіть ваше ім'я");
-}
-var time = prompt("О котрій годині Ви будете вільні?");
-while (time === "") {
-    alert("Ви не ввели годину");
-    var time = prompt("О котрій годині Ви будете вільні?");
-}
-var place = "вдома";
-var event = prompt("Чим Ви любите займатися у вільний час?");
+var name = "John";
+var time = "at 8 o'clock";
+var place = "at home";
+var event = prompt("What do you like to do in your free time?");
 while (event === "") {
-    alert("Ви не ввели чим ви любите займатися");
-    var event = prompt("Чим Ви любите займатися у вільний час?");
+    alert("field is empty");
+    event = prompt("What do you like to do in your free time?", "eating");
 }
-console.log(name, "сьогодні о", time, "годині буде", event, place);
+console.log(name, "will be ", event, time, place);
