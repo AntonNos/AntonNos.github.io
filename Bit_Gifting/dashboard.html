@@ -1,0 +1,389 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <title>BitGifting</title>
+    <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,700" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Arvo:400,700" rel="stylesheet">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/wallet.css">
+</head>
+<body>
+<section id="dashboard">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-12">
+                <div class="header__language">
+                    <p>english</p>
+                    <p>dutch</p>
+                </div>
+                <div class="header__logo">
+                    <img src="img/logo.png" alt="logo" class="logo__item">
+                </div>
+                <nav class="header__menu">
+                    <ul class="menu__item d-flex justify-content-center align-items-center">
+                        <li class="menu__item__link">
+                            <a href="index.html">Home</a>
+                        </li>
+                        <li class="menu__item__link">
+                            <a href="#">My gifts</a>
+                        </li>
+                        <li class="menu__item__link">
+                            <a href="contact.html">Contact</a>
+                        </li>
+                        <li class="menu__item__link">
+                            <a href="#">Register</a>
+                        </li>
+                        <li class="menu__item__button">
+                            <a href="#">Login</a>
+                        </li>
+                    </ul>
+                </nav>
+            </div>
+        </div>
+		<div class='container'>
+			<div class='row'>
+                <div class="container_dashboard ">
+                        <ul class="nav nav-tabs tabs-header col-lg-12 col-md-9 col-12 tab_selector" >
+                            <li class='active show'><a data-toggle="tab" class='li_active active show' href="#home"> My Wallet & Cards</a></li>
+                            <li><a data-toggle="tab" class='li_active' href="#menu1"> History</a></li>
+                            <li><a data-toggle="tab" class='li_active' href="#menu2"> Cash out</a></li>
+                            <li><a data-toggle="tab" class='li_active' href="#menu3"> My account</a></li>
+                            <li><a data-toggle="tab" class='li_active' href="#menu4"> Support</a></li>
+                        </ul>
+                </div> 
+                <div class="tab-content col-md-12">
+                    <div id="home" class="tab-pane fade in active show">
+                        <div class='my_wallet'>
+                            <div class="row">
+                                <div class='col-md-5 offset-md-1'>
+                                    <div class='my_wallet_first'>
+                                        <div class="my_wallet_first_title">
+                                            MY BTC WALLET
+                                        </div>
+                                        <div class="my_wallet_first_value">
+                                            <span class="value_1">12</span>
+                                            <span class="value_2">.25001</span>
+                                            <span class="value_3">BTC</span>
+                                        </div>
+                                        <div class="my_wallet_first_date">
+                                            as of: 12.05.2018
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class='col-md-5 '>
+                                    <div class='my_wallet_second'>
+                                        <div class="my_wallet_second_title">
+                                            VALUE IN FIAT CURRENCY
+                                        </div>
+                                        <div class="my_wallet_second_value">
+                                            <span class="value_1">4500</span>
+                                            <span class="value_2">.50</span>
+                                            <select id="pick_input">
+                                                <option value="USD">$</option>
+                                                <option value="EURO">&euro</option>
+                                            </select>
+                                        </div>
+                                        <div class="my_wallet_second_date">
+                                            using euro conversion value from: 11.05.2018
+                                        </div>
+                                    </div>
+                                </div>                                    
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-md-12">
+                                <div class="get__it__btn__block_dashboard">
+                                    <div class="circle__btn__item_dash">
+                                        <img src="img/button-arrow.png" alt="arrow-left" class="button-arrow">
+                                    </div>
+                                    <div class="button__item_dash">
+                                        <a href="#" class="cash_in_my_btc">CASH IN MY BTC</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <hr class="dash" />
+                        <div class="input_new_card">
+                            <div class="input_new_card_title">
+                                Input new card
+                            </div>
+                            <div class="row">
+                                <div class="col-md-12">
+                                    <form>
+                                        <input type="password" placeholder="**** **** **** ****" class="input__gift__card">
+                                        <input type="button" value="VALIDATE NEW CARD" class="card__validator">
+                                    </form>
+                                </div>
+                            </div>
+                                            
+                        </div>
+                    </div>
+                    <div id="menu1" class="tab-pane fade">
+                            <div class='container'>
+                                <div class='row'>
+                                    <table class="table table-strip table_css ">
+                                        <thead class='thead_style'>
+                                            <tr>
+                                                <th scope="col" class='first_col'>card number</th>
+                                                <th scope="col"  class='col-xs-2'>btc value</th>
+                                                <th scope="col"  class='col-xs-2'><select>
+                                                    <option>1</option>
+                                                    <option>2</option>
+                                                    <option>3</option>
+                                                    <option>4</option>
+                                                    </select>
+                                                    value</th>
+                                                <th scope="col"  class='col-xs-2'>activation date</th>
+                                                <th scope="col"  class='col-xs-2'>cashed in</th>		
+                                            </tr>
+                                        </thead>
+                                    <tbody>
+                                    <tr>
+                                        
+                                        <td class='td_style1 td1'>4005-1546-7788-1001</td>
+                                        <td class='td_style1'>1.215</td>
+                                        <td class='td_style1'>850.25</td>
+                                        <td class='td_date'>12.05.2016</td>
+                                        <td><img class='check_size' src='img/check.png'/></td>
+                                    </tr>
+                                    <tr>
+                                        
+                                        <td class='td_style1 td1'>2055-1256-7088-5560</td>
+                                        <td class='td_style1'>2.501</td>
+                                        <td class='td_style1'>1500.905</td>
+                                        <td class='td_date'>05.07.2017</td>
+                                        <td><img class='check_size' src='img/uncheck.png'/></td>
+                                    </tr>
+                                    <tr>
+                                        
+                                        <td class='td_style1 td1'>4005-1546-7788-1001</td>
+                                        <td class='td_style1'>1.215</td>
+                                        <td class='td_style1'>850.25</td>
+                                        <td class='td_date'>12.05.2016</td>
+                                        <td><img class='check_size' src='img/uncheck.png'/></span></td>
+                                    </tr>
+                                    <tr>
+                                        
+                                        <td class='td_style1 td1'>2055-1256-7088-5560</td>
+                                        <td class='td_style1'>2.501</td>
+                                        <td class='td_style1'>1500.905</td>
+                                        <td class='td_date'>05.07.2017</td>
+                                        <td><img class='check_size' src='img/uncheck.png'/></td>
+                                    </tr>
+                                    <tr>
+                                        
+                                        <td class='td_style1 td1'>4005-1546-7788-1001</td>
+                                        <td class='td_style1'>1.215</td>
+                                        <td class='td_style1'>850.25</td>
+                                        <td class='td_date'>12.05.2016</td>
+                                        <td><img class='check_size' src='img/check.png'/></td>
+                                    </tr>
+                                    </tbody>
+                                    </table>
+                                </div>
+                            </div>	
+                        </div>
+                    <div id="menu2" class="tab-pane fade">
+                        <div id="dashboard-two" class="tab-pane fade in active show">
+                            <div class='my_wallet'>
+                                <div class="row">
+                                    <div class='col-md-5 offset-md-1'>
+                                        <div class='my_wallet_first'>
+                                            <div class="my_wallet_first_title">
+                                                YOU OWN:
+                                            </div>
+                                            <div class="my_wallet_first_value">
+                                                <span class="value_1 value_cash_1">23</span>
+                                                <span class="value_2 value_cash_2">.25001</span>
+                                                <span class="value_3 value_cash_3">BTC</span>
+                                                <span class="value_cash_4">as of: 12.05.2018</span>
+                                            </div>
+                        
+                                            <hr class="dash small__dash" />
+                        
+                                            <div class="my_wallet_first_title">
+                                                VALUED AT:
+                                            </div>
+                                            <div class="my_wallet_first_value">
+                                                <span class="value_1 value_cash_1">4570</span>
+                                                <span class="value_2 value_cash_2">.54</span>
+                                                <span class="value_4 value_cash_3">€</span>
+                                                <span class="value_cash_4">using euro conversion value from: 11.05.2018</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class='col-md-5 '>
+                                        <div class='my_wallet_second'>
+                                            <div class="my_wallet_second_title">
+                                                BTC AMOUNT TO CASH OUT:
+                                            </div>
+                                            <div class="my_wallet_second_value">
+                                                                        <span>
+                                                                            <input type="text" placeholder="12" class="cash__input__first">
+                                                                        </span>
+                                                <span class="value_2">.</span>
+                                                <span>
+                                                                            <input type="text" placeholder="10025" class="cash__input__first cash__input__sec">
+                                                                        </span>
+                                            </div>
+                                            <div class="my_wallet_second_title">
+                                                VALUE RETURNED:
+                                                <span class="value_1 value_cash_1">1260</span>
+                                                <span class="value_1 value_cash_1">.58</span>
+                                                <span class="value_3 value_cash_3">€</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <hr class="dash big__dash" />
+                        
+                        <div class="input_new_card">
+                            <div class="input_new_card_title">
+                                Transfer to card:
+                            </div>
+                            <div class="row">
+                                <div class="col-md-12">
+                                    <form action="#" class="form__class">
+                                        <div class="left__form">
+                                            <div class="form-group">
+                                                <input type="text" class="input" placeholder="card number:">
+                                            </div>
+                                            <div class="form-group">
+                                                <input type="email" class="input" placeholder="name on card:">
+                                            </div>
+                                        </div>
+                                        <div class="right__form">
+                                            <textarea class="input" rows="6" id="message" placeholder="message"></textarea>
+                                        </div>
+                                    </form>
+                                    <input type="button" value="VALIDATE NEW CARD" class="card__validator">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div id="menu3" class="tab-pane fade">
+                        <h3>Menu 3</h3>
+                        <p>Eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo.</p>
+                    </div>
+                    <div id="menu4" class="tab-pane fade">
+                        <div class='container'>
+                            <div class='row'>
+                                <div class='support_1'>
+                                <h3 class='h3_support'>f.a.q</h3>
+                                    <div class="panel-group" id="accordion">
+                                        <div class="panel panel-default">
+                                            <div class="panel-heading">
+                                                <h4 class="panel-title">
+                                                <a data-toggle="collapse" data-parent="#accordion" href="#collapse1">
+                                                Lorem ipsum dolor sit amet, consectetur adipiscing elit?</a>
+                                                <a data-toggle="collapse" data-parent="#accordion" href="#collapse1"><img src='img/arrow.png'/></a>
+                                                </h4>
+                                            </div>
+                                            <div id="collapse1" class="panel-collapse collapse in">
+                                                <div class="panel-body">Ut vel elementum arcu. Proin interdum nec lorem in congue. 
+                                                                Nullam luctus mauris eleifend ante luctus, non tristique neque 
+                                                                vestibulum. Integer enim justo, porta quis sem sed, tempor 
+                                                                porta risus. Fusce placerat convallis blandit. 
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="panel panel-default">
+                                            <div class="panel-heading">
+                                                <h4 class="panel-title">
+                                                <a data-toggle="collapse" data-parent="#accordion" href="#collapse2">
+                                                Ut vel elementum arcu?</a>
+                                                <a data-toggle="collapse" data-parent="#accordion" href="#collapse2"><img src='img/arrow.png'/></a>
+                                                </h4>
+                                            </div>
+                                            <div id="collapse2" class="panel-collapse collapse">
+                                                <div class="panel-body">Ut vel elementum arcu. Proin interdum nec lorem in congue. 
+                                                    Nullam luctus mauris eleifend ante luctus, non tristique neque 
+                                                    vestibulum. Integer enim justo, porta quis sem sed, tempor 
+                                                    porta risus. Fusce placerat convallis blandit. 
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="panel panel-default">
+                                            <div class="panel-heading">
+                                                <h4 class="panel-title">
+                                                <a data-toggle="collapse" data-parent="#accordion" href="#collapse3">
+                                                Mauris dignissim volutpat condimentum?</a>
+                                                <a data-toggle="collapse" data-parent="#accordion" href="#collapse3"><img src='img/arrow.png'/></a>
+                                                </h4>
+                                            </div>
+                                            <div id="collapse3" class="panel-collapse collapse">
+                                                <div class="panel-body">Lorem ipsum dolor sit amet, consectetur adipisicing elit,
+                                                sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad
+                                                minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea
+                                                commodo consequat.</div>
+                                            </div>
+                                        </div>
+                                        <div class="panel panel-default">
+                                            <div class="panel-heading">
+                                                <h4 class="panel-title">
+                                                <a data-toggle="collapse" data-parent="#accordion" href="#collapse4">
+                                                Sed in ligula ornare, accumsan eros non, fermentum elit
+                                                uspendisse a orci ante ed quis libero et nulla ?</a>
+                                                <a data-toggle="collapse" data-parent="#accordion" href="#collapse4"><img src='img/arrow.png'/></a>
+                                                </h4>
+                                            </div>
+                                            <div id="collapse4" class="panel-collapse collapse">
+                                                <div class="panel-body">Lorem ipsum dolor sit amet, consectetur adipisicing elit,
+                                                sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad
+                                                minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea
+                                                commodo consequat.</div>
+                                            </div>
+                                        </div>
+                                        <div class="panel panel-default">
+                                            <div class="panel-heading">
+                                                <h4 class="panel-title">
+                                                <a data-toggle="collapse" data-parent="#accordion" href="#collapse5">
+                                                Ut vel elementum arcu. Proin interdum nec lorem in 
+                                                congue. Nullam luctus mauris eleifend ante luctus, 
+                                                non tristique neque vestibulum?</a>
+                                                <a data-toggle="collapse" data-parent="#accordion" href="#collapse5"><img src='img/arrow.png'/></a>
+                                                </h4>
+                                            </div>
+                                            <div id="collapse5" class="panel-collapse collapse">
+                                                <div class="panel-body">Lorem ipsum dolor sit amet, consectetur adipisicing elit,
+                                                sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad
+                                                minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea
+                                                commodo consequat.</div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class='support_2'>
+                                    <h3 class='h3_support'>Ask us anything</h3>
+                                    <form class='dashboard5_form form_dashboard' action="#">
+                                        <div class="form-group">
+                                            <input type="text" class="input__dash" placeholder="subject">
+                                        </div>
+                                        <div class="form-group">
+                                            <input type="email" class="input__dash input__mail" placeholder="alternative e-mail (optional)">
+                                        </div>
+                                        <textarea class="input__dash input__dash__textarea" rows="6" id="message" placeholder="message"></textarea>
+                                    </form>
+                                    <div class="button__item quick__button">
+                                        <a href="#">Send</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div> 
+            </div>
+        </div>		
+    </div>	
+</section>
+
+<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+</body>
+</html>
