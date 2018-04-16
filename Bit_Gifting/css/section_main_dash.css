@@ -1,0 +1,150 @@
+/*SECTION MAIN================================*/
+
+#dashboard {
+    background-color: #f2b852 ;
+}
+
+.header__menu {
+    margin-top: 20px;
+}
+
+.menu__item__link {
+    margin-right:20px;
+    font-weight: 700;
+    font-size: 16px;
+    text-decoration: none;
+    outline: none;
+    list-style: none;
+}
+
+.menu__item__link a {
+    color: #45708f;
+    font-weight: 700;
+    line-height: 32px;
+    font-size: 18px;
+}
+
+.menu__item__button {
+    box-shadow: 0 4px 0 #385e79;
+    background-color: #45708f;
+    padding: 3px 20px;
+    border-radius: 10px;
+    font-size: 14px;
+    font-weight: bold;
+    list-style: none;
+}
+
+.menu__item__button a {
+    text-shadow: 0 2px 0 #385e79;
+    color: #f0b95b;
+    font-size: 18px;
+}
+
+.menu__item__link a:hover {
+    color: #fff;
+}
+
+.menu__item__button a:hover {
+    color: #f0b95b;
+    text-decoration: none;
+}
+
+.logo__item {
+   display: block;
+    margin: 0 auto;
+    width: 200px;
+}
+
+.header__language {
+    display: flex;
+    align-items: center;
+    position: relative;
+    top: 50px;
+    padding-left: 100px;
+}
+
+.header__language p {
+    margin-left: 10px;
+    color: #45708f;
+}
+
+.header__language p:hover {
+    color: #fff;
+}
+
+.gift__card__block {
+    opacity: 0.9;
+}
+
+.gift__card__item {
+    display: block;
+    margin: 80px auto 40px auto;
+    width: 550px;
+}
+
+.circle__btn__item {
+    width: 38px;
+    height: 38px;
+    background-color: #fff;
+    border-radius: 50%;
+    margin: 0 auto;
+    position: relative;
+    top: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.button-arrow {
+   color: #45708f;
+    width: 26px;
+}
+
+.button__item {
+    text-align: center;
+}
+
+.button__item a {
+    box-shadow: 0 6px 0 #e3e3e3;
+    background-color: #fff;
+    padding: 6px 40px;
+    color: #45708f;
+    font-size: 25px;
+    font-weight: 700;
+    line-height: 58px;
+    text-transform: uppercase;
+    border-radius: 10px;
+}
+
+.button__item a:hover {
+    text-decoration: none;
+    color: #45708f;
+}
+
+.what__title__block {
+    text-align: center;
+    font-weight: 700;
+    margin-top: 80px;
+}
+
+.what__title__block span {
+    font-size: 90px;
+    position: relative;
+    top: 10px;
+}
+
+.what__title__text {
+    text-align: center;
+    line-height: 10px;
+    margin-top: 50px;
+}
+
+.what__title__item {
+    font-size: 45px;
+    font-weight: 700;
+    line-height: 5px;
+}
+
+.what__title__item:nth-child(2) {
+    margin-left: 90px;
+}

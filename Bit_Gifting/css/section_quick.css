@@ -1,0 +1,40 @@
+/*SECTION QUICK===============================*/
+#quick {
+    background-color: #e3b055;
+}
+.desc__title__item {
+    text-align: center;
+}
+.quick__title__item {
+    font-size: 30px;
+}
+.contact__title__item {
+    font-size: 30px;
+}
+form {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 20px;
+}
+.input{
+    background: transparent;
+    border: 2px solid #fff;
+    border-radius: 10px;
+    width: 300px;
+    padding: 7px 7px 7px 15px;
+    resize: none;
+    color: #fff;
+}
+.input:focus {
+    text-decoration: none;
+    outline: none;
+}
+.input::placeholder {
+    color: #fff;
+}
+.right__form {
+    margin-left: 20px;
+}
+.quick__button {
+    margin-bottom: 200px;
+}
