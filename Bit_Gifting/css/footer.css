@@ -19,6 +19,12 @@ footer:before {
     width: 150px;
     position: relative;
     bottom: 65px;
+    -webkit-box-shadow: 0px 10px 14px -5px rgba(202,203,219,1);
+    -moz-box-shadow: 0px 10px 14px -5px rgba(202,203,219,1);
+    box-shadow: 0px 10px 14px -5px rgba(202,203,219,1);
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    border-radius: 50%;
 }
 .footer__link__block {
     display: flex;

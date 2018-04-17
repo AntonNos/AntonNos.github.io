@@ -4,6 +4,7 @@ body {
     background: url("../img/main-background.png") no-repeat center top/ cover;
     font-family: 'Roboto', sans-serif;
 }
+
 p {
     color: #fff;
     font-size: 16px;
@@ -11,14 +12,13 @@ p {
     line-height: 20px;
 }
 a {
-    color: #fff;
     font-family: 'Arvo', serif;
 }
+
 a:hover {
     text-decoration: none;
     outline: none;
     list-style: none;
-    color: #45708f!important;
 }
 
 
@@ -36,7 +36,7 @@ a:hover {
     .offset-1 {
         margin: 0;
     }
-    .header__language {
+    .header__languages {
         margin-top: 55px;
         margin-left: 30px;
     }
@@ -330,4 +330,18 @@ a:hover {
     top: -36px;
     position: absolute;
 	  transform: rotate(180deg);
+}
+
+.header__lang {
+    color: #45708f;
+}
+
+.header__lang:hover,
+.header__lang:focus,
+.header__lang:active {
+    color: white;
+}
+
+.header__lang--active {
+    color: white;
 }

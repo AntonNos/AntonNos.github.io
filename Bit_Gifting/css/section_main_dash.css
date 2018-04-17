@@ -55,7 +55,7 @@
     width: 200px;
 }
 
-.header__language {
+.header__languages {
     display: flex;
     align-items: center;
     position: relative;
@@ -63,12 +63,12 @@
     padding-left: 100px;
 }
 
-.header__language p {
+.header__languages p {
     margin-left: 10px;
     color: #45708f;
 }
 
-.header__language p:hover {
+.header__languages p:hover {
     color: #fff;
 }
 
@@ -143,6 +143,7 @@
     font-size: 45px;
     font-weight: 700;
     line-height: 5px;
+    margin-bottom: 0;
 }
 
 .what__title__item:nth-child(2) {

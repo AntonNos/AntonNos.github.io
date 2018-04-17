@@ -24,6 +24,7 @@ form {
     padding: 7px 7px 7px 15px;
     resize: none;
     color: #fff;
+    font-weight: 100;
 }
 .input:focus {
     text-decoration: none;
