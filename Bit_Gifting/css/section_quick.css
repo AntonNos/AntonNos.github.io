@@ -1,0 +1,136 @@
+@import url('bebas.css');
+
+/* SECTION QUICK */
+
+.cont__form {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    margin: 45px 0 20px;
+}
+
+.quick__title__item {
+    font-size: 37px;
+    line-height: 22px;
+}
+
+.input__block {
+    border: 2px solid #fff;
+    border-radius: 10px;
+    max-width: 350px;
+    padding: 11px 7px 7px 15px;
+    resize: none;
+    color: #fff;
+    font-weight: 100;
+    height: 50px;
+    display: flex;
+    flex-wrap: nowrap;
+    margin-bottom: 17px;
+}
+
+.input__block label {
+    min-width: 90px;
+}
+
+.input,
+.input__textarea {
+    background: transparent;
+    border: none;
+    color: #fff;
+    font-weight: 400;
+    width: 350px;
+}
+
+.input:focus,
+.input__textarea:focus {
+    text-decoration: none;
+    outline: none;
+}
+
+.input::placeholder,
+.input__textarea::placeholder {
+    color: #fff;
+}
+
+.input__textarea {
+    background: transparent;
+    width: 350px;
+    border: 2px solid #fff;
+    border-radius: 10px;
+    resize: none;
+    height: 184px;
+    color: #fff;
+    padding: 7px;
+}
+
+.right__form {
+    margin-left: 20px;
+}
+
+.quick__button {
+    margin-bottom: 80px;
+}
+
+.button__submit {
+    font-family: 'Arvo', sans-serif;
+    box-shadow: 0 4px 0 #e3e3e3;
+    border: 0;
+    background-color: #fff;
+    padding: 16px 28px;
+    color: #45708f;
+    font-size: 18px;
+    font-weight: 700;
+    text-transform: uppercase;
+    border-radius: 10px;
+    line-height: 18px;
+}
+
+#quick .what__title__item:nth-child(1) {
+    margin-right: 75px;
+}
+
+@media screen and (max-width: 767px){
+    form {
+        flex-direction: column;
+        align-items: center;
+    }
+    .left__form {
+        margin-left: 20px;
+    }
+    .text__item {
+        margin: 5px auto 50px auto;
+    }
+    .offset-1 {
+        margin: 0;
+    }
+    .header__languages {
+        margin-top: 55px;
+        margin-left: 30px;
+        top: 0!important;
+    padding: 0!important;
+    }
+    /* .gift__card__item {
+        width: 80%;
+    } */
+    .input__gift__card {
+        left: 20%;
+        height: 45px;
+        max-width: 58%;
+        font-size: 15px;
+    }
+    .second__quote {
+        left: 40%;
+    }
+    #main .what__title__question{
+        right: 0px;
+    }
+    .cont__form {
+        flex-direction: column;
+    }
+}
+
+@media screen and (max-width: 425px) {
+    .button__item a {
+        padding: 6px 15px;
+    }
+}

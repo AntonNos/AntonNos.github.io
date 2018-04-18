@@ -1,0 +1,292 @@
+@import url('bebas.css');
+
+/* SECTION MAIN */
+
+.header__menu {
+    margin: 10px auto 0 auto;
+}
+
+.header__languages {
+    font-size: 12px;
+    margin-left: 33%;
+    margin-bottom: 3%;
+}
+
+.header__lang {
+    color: #45708f;
+}
+
+.header__lang:hover,
+.header__lang:focus,
+.header__lang:active {
+    color: white;
+}
+
+.header__lang--active {
+    color: white;
+}
+
+.header__languages p {
+    margin-left: 10px;
+    color: #45708f;
+}
+
+.header__languages p:hover {
+    color: #fff;
+}
+
+.logo__item {
+    width: 200px;
+    display: block;
+    margin: 40px auto 20px auto;
+}
+
+#logo__header {
+    width: 200px;
+    display: block;
+    margin: 40px auto 20px auto;
+}
+
+#language__header {
+    display: block;
+    font-size: 12px;
+    margin-left: 33%;
+    margin-bottom: 3%;
+    position: relative;
+    padding: 0;
+    top: 0;
+}
+
+.menu__item__link {
+    margin-right: 20px;
+    font-weight: 700;
+    font-size: 16px;
+    text-decoration: none;
+    outline: none;
+    list-style: none;
+}
+
+.menu__item__link a {
+    color: #45708f;
+    font-weight: 700;
+    line-height: 32px;
+    font-size: 16px;
+    border-bottom: 1px solid transparent;
+    position: relative;
+}
+
+.menu__item__link:hover a,
+.menu__item__link:focus a,
+.menu__item__link:active a,
+.menu__item__link--active a {
+    color: #fff;
+    border-bottom: 1px solid #fff;
+    padding-bottom: 7px;
+}
+
+.menu__item__link:hover a:after,
+.menu__item__link:focus a:after,
+.menu__item__link:active a:after,
+.menu__item__link--active a:after {
+    content: '';
+    position: absolute;
+    border-left: 5px solid transparent;
+    border-right: 5px solid transparent;
+    border-top: 5px solid #fff;
+    bottom: -5px;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.menu__item__button {
+    box-shadow: 0 4px 0 #385e79;
+    background-color: #45708f;
+    padding: 3px 20px;
+    border-radius: 10px;
+    font-size: 14px;
+    font-weight: bold;
+    list-style: none;
+}
+
+.menu__item__button__logout{
+    box-shadow: 0 4px 0 #d781b6;
+    background-color: #d781b6;
+    padding: 3px 20px;
+    border-radius: 10px;
+    font-size: 14px;
+    font-weight: bold;
+    list-style: none;
+}
+
+.menu__item__button__logout a {
+    text-shadow: 0 2px 0 #d781b6;
+    color: #fff;
+    font-size: 16px;
+}
+
+.menu__item__button a {
+    text-shadow: 0 2px 0 #385e79;
+    color: #f0b95b;
+    font-size: 16px;
+}
+
+.menu__item__link a:hover {
+    color: #fff;
+}
+
+.menu__item__button a:hover {
+    color: #fff!important;
+    text-decoration: none;
+}
+
+.gift__card__background {
+    position: relative;
+    width: 611px;
+    height: 387px;
+    margin: 20px auto;
+}
+
+.gift__card__item {
+    display: block;
+    border-radius: 20px;
+    width: 611px;
+    height: 387px;
+}
+
+.gift__card__block {
+    position: relative;
+    margin-top: 60px;
+}
+
+.gift__card__back__item {
+    display: block;
+    position: absolute;
+    top: 199px;
+    height: 100%;
+    border-radius: 36px;
+    left: 354px;
+}
+.gift__card__a{
+    text-transform: uppercase;
+    color: #45708f;
+    font-size: 27px;
+    font-family: 'BebasNeue Bold';
+}
+.input__gift__card__home {
+    position: absolute;
+    left: 10%;
+    transform: translateY(-50%);
+    top: 38%;
+    height: 69px;
+    border-radius: 10px;
+    border: 1px;
+    font-size: 30px;
+    text-align: center;
+    padding-top: 10px;
+    font-weight: 700;
+    letter-spacing: 6px;
+    width: 77%;
+    z-index: 1;
+    font-family: 'Arvo', serif;
+    color: #45708f;
+}
+input:focus {
+    outline: none;
+}
+.input__gift__card__home::placeholder {
+    color: #45708f;
+}
+.circle__btn__item {
+    width: 38px;
+    height: 38px;
+    background-color: #fff;
+    border-radius: 50%;
+    margin: 0 auto;
+    position: relative;
+    top: 18px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.button-arrow {
+   color: #45708f;
+    width: 26px;
+}
+.button__item {
+    text-align: center;
+}
+.button__item a {
+    box-shadow: 0 6px 0 #e3e3e3;
+    background-color: #fff;
+    padding: 10px 20px;
+    color: #45708f;
+    font-size: 27px;
+    font-weight: 700;
+    line-height: 58px;
+    text-transform: uppercase;
+    border-radius: 10px;
+}
+.button__item a:hover {
+    text-decoration: none;
+    color: #45708f;
+}
+
+.get__it__btn__block {
+    margin-top: 40px;
+}
+
+#main .what__title__question {
+    position: absolute;
+    top: 0;
+    right: 0;
+}
+
+
+@media (max-width:767px){
+
+    .slick-next.slick-arrow{
+        display: none
+    }
+    .gift__card__background, .gift__card__item{
+        width: 100%;
+        height: auto;
+    }
+    .input__gift__card__home{
+        height: 14%;
+        font-size: 15px;
+    }
+    .validate__block{
+        border: none;
+    padding: 0;
+    top: 57%;
+    left: 21%;
+    background: none;
+    }
+    .gift__card__back__item{
+        border-radius:6%;
+    }
+    .validate__btn{
+        font-size: 15px
+    }
+  
+    .outer-menu {
+        z-index: 10;
+    }
+    .gift__card__back__item {
+        top: 50%;
+        left: 55%;
+    }
+    .gift__card__a{
+        font-size: 16px;
+    }
+}
+
+@media (max-width:325px) {
+    .gift__card__a{
+        font-size: 15px;
+    }
+
+    .gift__card__back__item {
+        top: 49%;
+    }
+}
