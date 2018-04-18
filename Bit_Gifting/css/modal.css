@@ -1,0 +1,123 @@
+@import url('bebas.css');
+
+
+/* Modal--------------------- */
+.modal_css{
+	border-radius:18px;
+	border:0;
+	opacity:1;
+	
+}
+.h4-header{
+	background:#45708f;
+	text-transform: uppercase;
+	
+}
+.modal-header {
+    background: #45708f;
+    border-radius: 15px 15px 0 0;
+	color: #fff;
+	font-weight: 700;
+	font-family: 'Arvo', serif;
+	display: block;
+	max-height: 65px;
+	text-align: center;
+}
+.right_name_input{
+	text-align:right;
+	padding-left:23px;
+	font-size: 12px;
+	padding-top: 17px;
+}
+.left_name_input{
+	padding-right:23px;
+	font-size: 12px;
+	padding-top: 17px;
+}
+.popup__input {
+	border-radius: 5px;
+	height: 40px;
+	border: none;
+	background: #f4f4f4;
+	width: 100%;
+	padding: 20px;
+}
+.popup__span {
+	position: relative;
+	top: -35px;
+}
+.check__block {
+	text-align: center;
+	margin: 20px;
+}
+.check__link {
+	color: #45708f;
+	text-decoration: underline;
+}
+.circle__btn__item__popup{
+	width: 38px;
+	height: 38px;
+	background-color: #f2b852;
+	border-radius: 50%;
+	margin: 0 auto;
+	position: relative;
+	top: 18px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+.button-arrow {
+	color: #45708f;
+	width: 26px;
+}
+.button__item__popup {
+	text-align: center;
+}
+.button__item__popup a {
+	box-shadow: 0 5px 0 #cea14e;
+	background-color: #f2b852;
+	padding: 6px 20px;
+	color: #45708f;
+	font-size: 25px;
+	font-weight: 700;
+	line-height: 58px;
+	text-transform: uppercase;
+	border-radius: 10px;
+}
+.button__item__popup a:hover {
+	color: #45708f;
+}
+.dash {
+	border: 0 none;
+	border-top: 5px dotted #d1d1d1;
+	background: none;
+	height: 0;
+	margin-top: 45px;
+	margin-bottom: 30px;
+}
+.text__item__popup {
+	font-size: 10px;
+	color: #565652;
+	font-weight: 400;
+	font-family: 'Roboto', sans-serif;
+	width: 100%;
+	line-height: 15px;;
+}
+.recovery{
+	padding-top:16px;
+}
+.check__link__rec {
+    color: #45708f;
+    text-decoration: underline;
+    font-size: 11px;
+}
+
+@media (min-width: 576px){
+.modal-dialog {
+    max-width: 43%;
+    margin: 1.75rem auto;
+}
+}
+.button-people{
+		width: 18px;
+}

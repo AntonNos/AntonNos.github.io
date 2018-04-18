@@ -1,0 +1,179 @@
+@import url('bebas.css');
+
+/*SPECIFICATION=========================*/
+
+body {
+    background: url("../img/main-background.png") no-repeat center top/ cover;
+    font-family: 'Roboto', sans-serif;
+}
+
+p {
+    color: #fff;
+    font-size: 16px;
+    font-weight: 100;
+    line-height: 20px;
+}
+a {
+    color: #fff;
+    font-family: 'Arvo', serif;
+}
+a:hover {
+    text-decoration: none;
+    outline: none;
+    list-style: none;
+    color: #45708f;
+}
+
+@media screen and (min-width: 1600px) {
+    #work {
+        height: 43vw!important;
+    }
+}
+@media screen and (min-width: 1200px) {
+    #work {
+        height: 50vw;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+}
+@media screen and (max-width: 767px){
+
+
+    form {
+        flex-direction: column;
+        align-items: center;
+    }
+    .left__form {
+        margin-left: 20px;
+    }
+    .text__item {
+        margin: 5px auto 50px auto;
+    }
+    .offset-1 {
+        margin: 0;
+    }
+    .header__languages {
+        margin-top: 55px;
+        margin-left: 30px;
+    }
+    .gift__card__item {
+        width: 80%;
+    }
+    .input__gift__card {
+        left: 20%;
+        height: 45px;
+        max-width: 65%;
+        font-size: 15px;
+    }
+    .second__quote {
+        left: 40%;
+    }
+}
+
+@media screen and (max-width: 425px) {
+    .button__item a {
+        padding: 6px 15px;
+    }
+}
+
+.header__lang {
+    padding: 3px;
+    color: #45708f;
+}
+
+.header__lang:hover,
+.header__lang:focus,
+.header__lang:active {
+    color: white;
+}
+
+.header__lang--active {
+    color: white;
+}
+
+
+/*SLICK SLIDER */
+
+.single-item {
+    max-width: 750px;
+    margin: 0 auto;
+}
+
+.slick-arrow {
+    width: 22px;
+    height: 32px;
+    background: transparent;
+    position: absolute;
+    color: transparent;
+    top: 55%;
+    border: none;
+    cursor: pointer;
+}
+
+.slick-arrow:focus,
+.slick-arrow:active {
+    outline: none;
+}
+
+.slick-prev {
+    left: -90px;
+}
+
+.slick-next {
+    right: -90px;
+}
+
+.slick-prev:after {
+    content: '';
+    position: absolute;
+    background: url('../img/left-arrow.svg');
+    background-size: cover;
+    width: 22px;
+    height: 32px;
+    top: 0;
+    left: 0;
+}
+
+.slick-next:after {
+    content: '';
+    position: absolute;
+    background: url('../img/right-arrow.svg');
+    background-size: cover;
+    width: 22px;
+    height: 32px;
+    top: 0;
+    left: 0;
+}
+
+.container .btcwdgt-chart {
+    margin: 30px auto !important;
+}
+
+.mb-80 {
+    margin-bottom: 80px;
+}
+
+.mb-160 {
+    margin-bottom: 160px;
+}
+
+.mb-10 {
+    margin-bottom: 10px;
+}
+
+.mr-10 {
+    margin-right: 10px;
+}
+
+.mr-20 {
+    margin-right: 20px;
+}
+
+.mt-20 {
+    margin-top: 20px !important;
+}
+
+.mt-40 {
+    margin-top: 40px !important;
+}

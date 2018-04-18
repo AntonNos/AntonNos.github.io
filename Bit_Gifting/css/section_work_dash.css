@@ -1,0 +1,43 @@
+@import url('bebas.css');
+
+/*SECTION WORK=============================================*/
+#work {
+    background: url("../img/work-backgroud.png") no-repeat center / cover;
+}
+
+.how__title__item {
+    margin-left: 150px;
+}
+
+.numbers__block {
+    margin-top: 80px;
+}
+
+.number__item {
+    opacity: 0.1;
+    text-shadow: 0 0 21px rgba(176, 111, 56, 0.15);
+    color: #000;
+    font-size: 150px;
+    font-weight: bold;
+    text-transform: uppercase;
+    line-height: 70px;
+}
+
+.image__item img {
+    width: 85px;
+    position: relative;
+    bottom: 30px;
+}
+
+.text__item {
+    width: 110px;
+    text-align: center;
+}
+
+.how__bottom__text {
+    text-align: center;
+}
+
+.how__bottom__text p {
+    margin: 0;
+}

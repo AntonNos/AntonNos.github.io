@@ -1,0 +1,676 @@
+/*SPECIFICATION=========================*/
+@font-face{
+    font-family:BebasNeue Bold;
+    src:url("../fonts/BebasNeue Bold.otf") format("opentype")
+}
+
+@font-face{
+    font-family:BebasNeue Regular;
+    src:url("../fonts/BebasNeue Regular.otf") format("opentype")
+}
+
+form {
+    /* background: #f4f4f4; */
+    border-radius: 10px;
+    margin: 30px 0;
+}
+
+#support__form {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.card_form {
+    background: #f4f4f4;
+}
+
+#message {
+    background: #f4f4f4
+}
+
+p {
+    color: #fff;
+    font-size: 14px;
+    font-weight: 100;
+}
+
+.my_wallet_first_title, .my_wallet_second_title, .value_1, .value_2, .cash_in_my_btc, .input_new_card_title {
+    font-family: 'Arvo', sans-serif;
+}
+
+.value_3, .my_wallet_first_date, .my_wallet_second_date {
+    font-family: 'Roboto', sans-serif;
+}
+
+
+.my_wallet_first_title, .my_wallet_first_date, .my_wallet_second_title, .cash_in_my_btc, .input_new_card_title, .value_1, .value_2, .value_3 {
+    font-weight: 700;
+}
+
+.my_wallet_second_date {
+    font-weight: 400;
+}
+
+.my_wallet_first_title, .my_wallet_second_title, .input_new_card_title {
+    font-size: 15px;
+}
+
+.my_wallet_first_date, .my_wallet_second_date {
+    font-size: 14px;
+}
+
+.value_1 {
+    font-size: 32px;
+}
+
+.value_2 {
+    font-size: 20px;
+}
+
+.cash_in_my_btc {
+    font-size: 27px;
+}
+
+.my_wallet_first_title, .my_wallet_first_date, .value_3, .my_wallet_second_title, .my_wallet_second_date {
+    color: #565652;
+}
+
+/*DASHBOARD======*/
+
+/* MY WALLET & CARDS */
+
+.icon_blue, .icon_white {
+    width: 25px;
+}
+
+.active .icon_white,
+.icon_hover:hover .icon_white,
+.icon_blue {
+    display: none;
+}
+
+.active .icon_blue,
+.icon_hover:hover .icon_blue,
+.icon_white {
+    display: block;
+}
+
+.icon_hover:hover .li_active{
+    background: #fff;
+    color: #45708f;
+}
+
+.tabs_text {
+    padding-left: 15px;
+}
+
+.dash {
+    border: 0 none;  
+    border-top: 5px dotted #d1d1d1;
+    background: none;
+    height: 0;
+    margin-top: 45px;
+    margin-bottom: 30px;
+} 
+
+.container_dashboard {
+    padding-right: 15px;
+    padding-left: 15px;
+    margin-right: auto;
+    margin-left: auto;
+    text-align: center;
+    margin-top: 26px;
+	display:flex;
+	justify-content:center;
+	align-items:center;
+}
+
+.nav li {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+    margin-bottom: 0;
+    list-style: none;
+    margin-left:3px;
+    background: white;
+    text-align: center;
+    border-radius: 10px 10px 0px 0px;
+}
+
+.nav li a {
+    font-family: 'Roboto', sans-serif;
+    font-size: 14px;
+    font-weight: 700;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    border-radius: 10px 10px 0px 0px;
+    padding:14px 32px;
+    background: #45708f;
+    color:white;
+    transition: 0.2s;
+}
+
+.tab-content {
+    background:white;
+    border-radius: 10px;
+}
+
+.nav-tabs {
+    border-bottom: none;
+}
+
+.button__item_dash {
+    text-align: center;
+}
+
+.button__item_dash a {
+    box-shadow: 0 5px 0 #cea14e;
+    background-color: #f2b852;
+    padding: 10px 40px 6px;
+    color: #45708f;
+    line-height: 58px;
+    text-transform: uppercase;
+    border-radius: 10px;
+}
+
+.circle__btn__item_dash {
+    width: 38px;
+    height: 38px;
+    background-color: #f2b852;
+    border-radius: 50%;
+    margin: 0 auto;
+    position: relative;
+    top: 18px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.tabs-header .active {
+    background-color:white;
+    color:#45708f;
+}
+
+.tabs-header a {
+    text-decoration:none;
+}
+
+.my_wallet_first {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 25px 10px 20px 35px;
+    box-shadow: 0 23px 54px rgba(0, 0, 0, 0.07);
+    background-color: #ffffff;
+    border-radius:10px 10px 10px 10px;
+}
+
+.value_1, .value_2 {
+    color: #45708f;
+}
+
+#value1 {
+    font-size: 64px;
+}
+
+#value2 {
+    font-size: 32px;
+}
+
+#value3 {
+    font-size: 19px;
+}
+
+#pick_input {
+    width: 65px;
+    padding: 8px;
+    margin-left: 10px;
+    height: 36px;
+    border: 0;
+    background: #f4f4f4;
+    border-radius: 5px;
+}
+
+.my_wallet_second {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 25px 10px 20px 35px;
+    box-shadow: 0 23px 54px rgba(0, 0, 0, 0.07);
+    background-color: #ffffff;
+    border-radius:10px 10px 10px 10px;
+}
+
+.my_wallet {
+    padding-top:60px;
+}
+
+.get__it__btn__block_dashboard {
+    padding-top:40px;
+}
+
+.input_new_card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.input_new_card_title {
+    color: #457081;    
+}
+
+#card_number {
+    margin: 20px 0;
+    background: #f4f4f4;
+    color: #457081;
+    border: 0;
+}
+
+.input__gift__card {
+    background: #f4f4f4;
+    color: #45708f;
+    border-radius: 10px;
+    border: 1px;
+    font-size: 30px;
+    text-align: center;
+    padding-top: 20px;
+    font-weight: 700;
+    letter-spacing: 2px;
+    max-width: 100%;
+    font-family: 'Arvo', serif;
+}
+
+.card__validator {
+    font-family:'BebasNeue Regular', sans-serif;
+    box-shadow: 0 0 2px 0 #cea14e;
+    background-color: #f2b852;
+    color: #45708f;
+    font-size: 27px;
+    font-weight: 700;
+    text-transform: uppercase;
+    border-radius: 5px;
+    position: relative;
+    bottom: 10px;
+    right: 10px;
+    border: 1px;
+    padding: 2px 20px;
+}
+/* CASH OUT */
+.value_cash_3 {
+    font-size: 19px;
+}
+
+.value_cash_4 {
+    font-size: 9px;
+    opacity: 0.5;
+    color: #565652;
+    margin-left: 5px;
+}
+
+.small__dash {
+    width: 96%;
+    margin: 10px 0 15px 0!important;
+}
+
+.cash__input__first {
+    height: 55px;
+    border-radius: 10px;
+    border: 1px;
+    font-size: 28px;
+    text-align: center;
+    padding-top: 10px;
+    letter-spacing: 2px;
+    max-width: 40%;
+    font-family: 'Arvo', serif;
+    background-color: #f4f4f4;
+    font-weight: 700;
+    margin: 15px 0 23px 0;
+    width: 30%;
+}
+
+.cash__input__first::placeholder {
+    color: #45708f;
+    font-family: 'Arvo', serif;
+    font-weight: 700;
+}
+
+.cash__input__sec {
+    width: 50%;
+    font-size: 19px;
+}
+
+.right__form {
+    margin-left: 20px;
+}
+
+.form__class {
+    /* background: #f4f4f4; */
+    display: flex;
+    justify-content: center;
+    margin: 30px 0 20px 0;
+}
+.input{
+    background: #f4f4f4;
+    border: 2px solid #fff;
+    border-radius: 10px;
+    width: 300px;
+    padding: 7px 7px 7px 15px;
+    resize: none;
+    color: #000;
+}
+.input:focus {
+    text-decoration: none;
+    outline: none;
+}
+.input::placeholder {
+    color: #000;
+}
+.right__form {
+    margin-left: 20px;
+}
+
+.form-group {
+    background: #f4f4f4;
+    width: 90%;
+    border-radius: 5px;
+}
+
+
+@media screen and (max-width: 992px)  {
+    .card_form {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .card__validator {
+        right: 0;
+        bottom: 0;
+    }
+
+    .container_dashboard {
+        width: 100%;
+    }
+
+    .tab_selector {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .nav li {
+        border-radius: 10px;
+    }
+
+    .nav li a {
+        border-radius: 10px;
+    }
+
+    .li_active {
+        width: 100%;
+    }
+}
+
+
+@media screen and (max-width: 767px) {
+    .my_wallet_second {
+        margin-top: 20px;
+    }
+    .table_css {
+        display: block;
+        overflow-x: auto;
+        white-space: nowrap;
+    }
+    .form__class {
+        margin: 0 auto;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .card__validator {
+        right: 0;
+    }
+
+    .support__tablet {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .support_1, .support_2 {
+        width: 100%!important;
+    }
+
+    .support_1 {
+        padding-left: 55px!important;
+    }
+}
+
+@media screen and (max-width: 425px) {
+    .value_1 {
+        font-size: 50px;
+    }
+
+    .value_2 {
+        font-size: 25px;
+    }
+    
+    .cash_in_my_btc {
+        padding: 10px 25px 6px;
+        font-size: 18px;
+    }
+
+    .input__gift__card {
+        font-size: 20px;
+    }
+
+    .card__validator{
+        font-size: 20px;
+        margin-top: 10px;
+    }
+}
+
+
+
+
+/* HISTORY------------------------------------------------------------------------------------------------- */
+.table_css{
+	margin:22px 0px 0px 0px;
+	width:100%;
+	height:100%;
+	padding:18px;
+}
+.first_col
+{
+	width:38%;
+}
+.thead_style{
+	border-top:none !important;
+}
+.tablee{
+    display: table;
+    border-collapse: separate;
+    border-spacing: 2px;
+    border-color: grey;
+}
+.table td, .table th {
+    padding: .75rem;
+    vertical-align:middle;
+    border-top: none !important;
+}
+.table thead th {
+    vertical-align: bottom;
+    border-bottom: 2px dotted #dee2e6;
+    font-weight: 100;
+    font-family: Roboto;
+}
+.table-strip tbody tr:nth-of-type(even) {
+    background-color: rgba(0,0,0,.05);
+}
+
+.check_size{
+	height:16px;
+	width:17px;
+}
+.table td, .table th {
+    padding: .75rem;
+    vertical-align: middle;
+    border-top: none !important;
+    text-align: center;
+}
+.table th{
+	font-family: Roboto;
+
+}
+.td_style1{
+	font-family: Arvo;
+	font-weight: 700;
+	line-height: 60px;
+	letter-spacing: 1.1px;	
+}
+.td1{
+	color: #45708f;
+	font-size: 20px;
+}
+.td_date{
+	color: #565652;
+	font-family: Roboto;
+	font-size: 15px;
+	font-weight: 700;
+	line-height: 60px;
+}
+.select__eu{
+    background-color: #f4f4f4;
+    border-radius: 7px;
+    border: none;
+    width:47px;
+    padding: 5px 3px;
+}
+.no-padding{
+    padding-right:0;
+    padding-left:0;
+}
+th{
+    font-weight:0;
+}
+
+
+/* Support------------------------------------------------------------------------- */
+.support_1{
+	width:50%;
+	padding:37px 10px 20px 20px;
+	border-right:2px dotted #dee2e6;
+	color: #45708f;
+	font-family: Roboto;
+}
+.support_2{
+	width:50%;
+	padding:37px 10px 20px 20px;
+	text-align:center;
+	color: #45708f;
+	font-family: Roboto;
+}
+.h3_support{
+	font-family: Arvo;
+	font-size: 20px;
+	font-weight: 700;
+	line-height: 32.66px;
+	padding-left: 28px;
+	text-align: left;
+}
+.panel{
+    box-shadow: 0 23px 54px rgba(0, 0, 0, 0.07);
+    background-color: #ffffff;
+    border-radius: 10px 10px 10px 10px;
+	width:90%;	
+	display:flex;
+	flex-direction:column;
+	justify-content:center;
+	align-items:center;
+	margin-bottom:25px;
+	margin-top: 27px;
+}
+.panel-heading {
+	width: 90%;
+	padding: 23px 0 23px 0;
+	color: #45708f;
+}
+.panel-heading a img {
+	width:10px;
+}
+.panel-title {
+	width: 100%;
+    display: flex;
+    justify-content: space-between;
+	margin:0;
+	font-family: 'Roboto';
+}
+.panel-title a {
+    font-family: 'Roboto';
+	font-size:11px;
+    color: #45708f;
+    font-weight: 700;
+}
+.panel-body {
+	font-size:11px;
+	padding: 20px;
+}
+.dashboard5_column{
+	display: flex;
+	flex-direction:column;
+    justify-content: center;
+    margin-bottom: 20px;
+	width:90%;
+}
+.input__dash{
+    background: #f4f4f4;
+    border: none;
+    height: 50px;
+    border-radius: 5px;
+    padding: 20px 20px 20px 0;
+    width: 90%;
+    color: #000;
+	height: 100%;
+    resize: none;
+	
+}
+.input__dash__textarea {
+    height:230px;
+    padding-left: 20px;
+}
+.input__dash::placeholder {
+	    color: #565652;
+		font-family: Roboto;
+}
+.button__item {
+	text-align: left;
+    padding: 20px 37px;
+}
+.support__button__item {
+    text-align: left;
+    margin-left: 26px;
+}
+.support__button__item  a {
+    box-shadow: 0 0 2px 0 #cea14e;
+    background-color: #f2b852;
+    color: #45708f;
+    font-size: 27px;
+    font-weight: 400;
+    text-transform: uppercase;
+    border-radius: 5px;
+    padding: 5px 23px;
+    font-family: "BebasNeue Regular";
+}
+.panel-body{
+	color:black;
+}
+.input__mail::placeholder {
+	color: #565652 !important;
+	
+}
+

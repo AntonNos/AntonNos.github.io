@@ -1,0 +1,246 @@
+@import url('bebas.css');
+
+/*SECTION MAIN================================*/
+
+#dashboard {
+    background-color: #f2b852 ;
+}
+
+.header__menu {
+    margin: 10px auto 0 auto;
+}
+
+.menu__item__link {
+    margin-right:20px;
+    font-weight: 700;
+    font-size: 16px;
+    text-decoration: none;
+    outline: none;
+    list-style: none;
+}
+
+.menu__item__link a {
+    color: #45708f;
+    font-weight: 700;
+    line-height: 32px;
+    font-size: 16px;
+}
+
+.menu__item__button {
+    box-shadow: 0 4px 0 #385e79;
+    background-color: #45708f;
+    padding: 3px 20px;
+    border-radius: 10px;
+    font-size: 14px;
+    font-weight: bold;
+    list-style: none;
+}
+
+.menu__item__button a {
+    text-shadow: 0 2px 0 #385e79;
+    color: #f0b95b;
+    font-size: 18px;
+}
+
+.menu__item__link a:hover {
+    color: #fff;
+}
+
+.menu__item__button a:hover {
+    color: #f0b95b;
+    text-decoration: none;
+}
+
+.logo__item {
+   display: block;
+    margin: 0 auto;
+    width: 200px;
+}
+
+.header__languages {
+    display: flex;
+    align-items: center;
+    position: relative;
+    top: 50px;
+    padding-left: 100px;
+}
+
+.header__languages p {
+    margin-left: 10px;
+    color: #45708f;
+}
+
+.header__languages p:hover {
+    color: #fff;
+}
+
+.gift__card__block {
+    opacity: 0.9;
+}
+
+.gift__card__item {
+    display: block;
+    margin: 80px auto 40px auto;
+    width: 550px;
+}
+
+.circle__btn__item {
+    width: 38px;
+    height: 38px;
+    background-color: #fff;
+    border-radius: 50%;
+    margin: 0 auto;
+    position: relative;
+    top: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.button-arrow {
+   color: #45708f;
+    width: 26px;
+}
+
+.button__item {
+    text-align: center;
+}
+
+.button__item a {
+    box-shadow: 0 6px 0 #e3e3e3;
+    background-color: #fff;
+    padding: 16px 40px;
+    color: #45708f;
+    font-size: 18px;
+    font-weight: 700;
+    line-height: 58px;
+    text-transform: uppercase;
+    border-radius: 10px;
+}
+
+.button__item a:hover {
+    text-decoration: none;
+    color: #45708f;
+}
+
+.what__title__block {
+    text-align: center;
+    font-weight: 700;
+    margin-top: 80px;
+}
+
+.what__title__block span {
+    font-size: 90px;
+    position: relative;
+    top: 10px;
+}
+
+.what__title__text {
+    text-align: center;
+    line-height: 10px;
+    margin-top: 50px;
+}
+
+.what__title__item {
+    font-size: 45px;
+    font-weight: 700;
+    line-height: 15px;
+    margin-bottom: 0;
+}
+
+.form--person {
+    max-width: 340px;
+    width: 340px;
+}
+
+.input--transfer {
+    color: #565652;
+    font-size: 14px;
+    font-weight: 400;
+    height: 50px;
+    background-color: #f4f4f4;
+}
+
+.input--person {
+    width: 100%;
+}
+
+.input--transfer::placeholder {
+    color: #565652;
+}
+
+.select--transfer {
+    background-color: #f4f4f4;
+    height: 50px;
+    color: #565652;
+    max-width: 100px;
+    padding-left: 20px;
+}
+
+.input__text {
+    opacity: 0.55;
+    color: #565652;
+    font-size: 14px;
+    font-weight: 400;
+}
+
+.confirm-card {
+    margin: 0 auto;
+    display: block;
+    cursor: pointer;
+}
+
+.person-label {
+    display: block;
+    opacity: 0.5;
+    color: #565652;
+    font-size: 14px;
+    font-weight: 400;
+    padding-left: 20px;
+    margin-bottom: 0;
+}
+
+.select__person-block {
+    display: flex;
+    justify-content: space-between;
+}
+
+.select--person {
+    margin-right: 10px;
+}
+
+.select--person:last-of-type {
+    margin-right: 0;
+}
+
+.select--full {
+    width: 100%;
+    max-width: 100%;
+}
+
+.input--saved {
+    width: 340px;
+}
+
+@media screen and (min-width: 768px) and (max-width: 991px) { 
+    .input--person {
+        width: 80%;
+        margin-left: 20px;
+    }
+    .select--full {
+        width: 100%;
+        max-width: 80%;
+        margin-left: 40px;
+    }
+    .select--transfer {
+        padding-left: 15px;
+        margin-left: 20px;
+    }
+    .person-label {
+        
+        margin-left: 30px;
+    }
+    .input--saved {
+        width: 300px;
+    }
+}
