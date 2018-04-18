@@ -1,3 +1,5 @@
+@import url('bebas.css');
+
 /*SECTION WORK=============================================*/
 #work {
     background: url("../img/work-backgroud.png") no-repeat center / cover;
@@ -27,8 +29,15 @@
     bottom: 30px;
 }
 .text__item {
-    max-width: 145px;
+    max-width: 150px;
     text-align: center;
+    height: 110px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.another__text__item {
+    margin-top: 6px;
 }
 .text__item p {
     font-weight: 400;
@@ -41,4 +50,8 @@
 .how__bottom__text p {
     margin: 0;
     font-weight: 100;
+}
+
+#work .what__title__block {
+    max-width: none;
 }

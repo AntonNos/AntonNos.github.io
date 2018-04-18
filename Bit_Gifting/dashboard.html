@@ -15,20 +15,21 @@
     <link rel="stylesheet" href="css/section_work.css">
     <link rel="stylesheet" href="css/section_bitcoin.css">
     <link rel="stylesheet" href="css/section_quick.css">
+    <link rel="stylesheet" href="css/section_main_dash.css">
     <link rel="stylesheet" href="css/footer.css">
 </head>
 <body>
-<section id="dashboard">
+<section id="dashboard" class="mb-160">
     <div class="container">
         <div class="row d-flex justify-content-center align-items-center">
             <div class="col-md-4">
-                <div class="header__languages">
+                <div class="header__languages" id="language__header">
                     <a class="header__lang header__lang--active" href="#">english</a>
                     <a class="header__lang" href="#">dutch</a>
                 </div>
             </div>
             <div class="col-md-4">
-                <a class="header__logo" href="index.html">
+                <a class="header__logo" href="index.html" id="logo__header">
                     <img src="img/logo.png" alt="logo" class="logo__item">
                 </a>
             </div>
@@ -49,10 +50,10 @@
                         <a href="contact.html">Contact</a>
                     </li>
                     <li class="menu__item__link">
-                        <a href="#">Register</a>
+                        <a href="#" data-toggle="modal" data-target="#register">Register</a>
                     </li>
-                    <li class="menu__item__button">
-                        <a href="#" data-toggle="modal" data-target="#exampleModalCenter">Login</a>
+                    <li class="menu__item__button__logout">
+                        <a href="#" data-toggle="modal" data-target="#exampleModalCenter">Logout</a>
                     </li>
                 </ul>
             </nav>
@@ -69,8 +70,8 @@
                             <li><a href="#">Home</a></li>
                             <li><a href="dashboard.html">My Gifts</a></li>
                             <li><a href="contact.html">Contact</a></li>
-                            <li><a href="#">Register</a></li>
-                            <li><a href="#" class="outer__menu__button" data-toggle="modal" data-target="#exampleModalCenter">Login</a></li>
+                            <li><a href="#" data-toggle="modal" data-target="#register">Register</a></li>
+                            <li><a href="#" class="outer__menu__button__logout" data-toggle="modal" data-target="#exampleModalCenter">Logout</a></li>
                         </ul>
                     </div>
                 </div>
@@ -80,14 +81,34 @@
 			<div class='row'>
                 <div class="container_dashboard ">
                         <ul class="nav nav-tabs tabs-header col-lg-12 col-md-9 col-12 tab_selector" >
-                            <li class='active show'><a data-toggle="tab" class='li_active active show' href="#home"> My Wallet & Cards</a></li>
-                            <li><a data-toggle="tab" class='li_active' href="#menu1"> History</a></li>
-                            <li><a data-toggle="tab" class='li_active' href="#menu2"> Cash out</a></li>
-                            <li><a data-toggle="tab" class='li_active' href="#menu3"> My account</a></li>
-                            <li><a data-toggle="tab" class='li_active' href="#menu4"> Support</a></li>
+                            <li class='show icon_hover'><a data-toggle="tab" class='li_active active show' href="#home">
+                                <img src="img/tabs-icon/card-white.png" alt="icon" class="icon_white">
+                                <img src="img/tabs-icon/card-blue.png" alt="icon" class="icon_blue">
+                                <span class="tabs_text">My Wallet & Cards</span>
+                            </a></li>
+                            <li class="icon_hover"><a data-toggle="tab" class='li_active' href="#menu1">
+                                <img src="img/tabs-icon/book-white.png" alt="icon" class="icon_white">
+                                <img src="img/tabs-icon/book-blue.png" alt="icon" class="icon_blue"> 
+                                <span class="tabs_text">History</span>
+                            </a></li>
+                            <li class="icon_hover"><a data-toggle="tab" class='li_active' href="#menu2"> 
+                                <img src="img/tabs-icon/wallet-white.png" alt="icon" class="icon_white">
+                                <img src="img/tabs-icon/wallet-blue.png" alt="icon" class="icon_blue"> 
+                                <span class="tabs_text">Cash out</span>
+                            </a></li>
+                            <li class="icon_hover"><a data-toggle="tab" class='li_active' href="#menu3">
+                                <img src="img/tabs-icon/people-white.png" alt="icon" class="icon_white">
+                                <img src="img/tabs-icon/people-blue.png" alt="icon" class="icon_blue">  
+                                <span class="tabs_text">My account</span>
+                            </a></li>
+                            <li class="icon_hover"><a data-toggle="tab" class='li_active' href="#menu4">
+                                <img src="img/tabs-icon/phone-white.png" alt="icon" class="icon_white">
+                                <img src="img/tabs-icon/phone-blue.png" alt="icon" class="icon_blue">  
+                                <span class="tabs_text">Support</span>
+                            </a></li>
                         </ul>
                 </div> 
-                <div class="tab-content col-md-12">
+                <div class="tab-content col-md-12 no-padding">
                     <div id="home" class="tab-pane fade in active show">
                         <div class='my_wallet'>
                             <div class="row">
@@ -97,9 +118,9 @@
                                             MY BTC WALLET
                                         </div>
                                         <div class="my_wallet_first_value">
-                                            <span class="value_1">12</span>
-                                            <span class="value_2">.25001</span>
-                                            <span class="value_3">BTC</span>
+                                            <span class="value_1" id="value1">12</span>
+                                            <span class="value_2" id="value2">.25001</span>
+                                            <span class="value_3" id="value3">BTC</span>
                                         </div>
                                         <div class="my_wallet_second_date">
                                             as of: <b>12.05.2018</b>
@@ -112,8 +133,8 @@
                                             VALUE IN FIAT CURRENCY
                                         </div>
                                         <div class="my_wallet_second_value">
-                                            <span class="value_1">4500</span>
-                                            <span class="value_2">.50</span>
+                                            <span class="value_1" id="value1">4500</span>
+                                            <span class="value_2" id="value2">.50</span>
                                             <select id="pick_input">
                                                 <option value="USD">$</option>
                                                 <option value="EURO">€</option>
@@ -130,7 +151,7 @@
                             <div class="col-md-12">
                                 <div class="get__it__btn__block_dashboard">
                                     <div class="circle__btn__item_dash">
-                                        <img src="img/button-arrow.png" alt="arrow-left" class="button-arrow">
+                                        <img src="img/tabs-icon/wallet-blue.png" alt="arrow-left" class="button-arrow">
                                     </div>
                                     <div class="button__item_dash">
                                         <a href="#" class="cash_in_my_btc">CASH IN MY BTC</a>
@@ -145,8 +166,8 @@
                             </div>
                             <div class="row">
                                 <div class="col-md-12">
-                                    <form>
-                                        <input type="password" placeholder="**** **** **** ****" class="input__gift__card">
+                                    <form class="card_form">
+                                        <input type="password" placeholder="**** **** **** ****" maxlength="16" class="input__gift__card">
                                         <input type="button" value="VALIDATE NEW CARD" class="card__validator">
                                     </form>
                                 </div>
@@ -160,17 +181,16 @@
                                     <table class="table table-strip table_css ">
                                         <thead class='thead_style'>
                                             <tr>
-                                                <th scope="col" class='first_col'>card number</th>
-                                                <th scope="col"  class='col-xs-2'>btc value</th>
-                                                <th scope="col"  class='col-xs-2'><select>
-                                                    <option>1</option>
-                                                    <option>2</option>
-                                                    <option>3</option>
-                                                    <option>4</option>
+                                                <th scope="col" class='first_col no-bold'>card number</th>
+                                                <th scope="col"  class='col-xs-2 no-bold'>btc value</th>
+                                                <th scope="col"  class='col-xs-2 no-bold'>
+                                                    <select class='select__eu'>
+                                                        <option>€</option>
+                                                        <option>$</option>
                                                     </select>
                                                     value</th>
-                                                <th scope="col"  class='col-xs-2'>activation date</th>
-                                                <th scope="col"  class='col-xs-2'>cashed in</th>		
+                                                <th scope="col"  class='col-xs-2 no-bold'>activation date</th>
+                                                <th scope="col"  class='col-xs-2 no-bold'>cashed in</th>		
                                             </tr>
                                         </thead>
                                     <tbody>
@@ -282,33 +302,183 @@
                             </div>
                             <div class="row">
                                 <div class="col-md-12">
-                                    <form action="#" class="form__class">
-                                        <div class="left__form">
-                                            <div class="form-group">
-                                                <input type="text" class="input" placeholder="card number:">
+                                    <form action="#">
+                                        <div class="form__class">
+                                            <div class="left__form">
+                                                <div class="mb-10">
+                                                    <input type="text" class="input input--transfer" placeholder="card number:">
+                                                </div>
+                                                <div class="mb-10">
+                                                    <input type="email" class="input input--transfer" placeholder="name on card:">
+                                                </div>
                                             </div>
-                                            <div class="form-group">
-                                                <input type="email" class="input" placeholder="name on card:">
+                                            <div class="right__form">
+                                                <div class="mb-10">
+                                                    <span class="input__text mr-10">expiry date</span>
+                                                    <select id="month" class="input select--transfer mr-10">
+                                                        <option value="01">01</option>
+                                                        <option value="02">02</option>
+                                                    </select>
+                                                    <select id="year" class="input select--transfer">
+                                                        <option value="2000">2000</option>
+                                                        <option value="2001">2001</option>
+                                                    </select>
+                                                </div>
+                                                <div class="mb-10">
+                                                    <span class="input__text mr-20">CVV/CV2</span>
+                                                    <input type="text" class="input input--transfer select--transfer">
+                                                </div>
                                             </div>
                                         </div>
-                                        <div class="right__form">
-                                            <textarea class="input" rows="6" id="message" placeholder="message"></textarea>
-                                        </div>
+                                        <input type="button" value="confirm cash out" class="card__validator confirm-card">
                                     </form>
-                                    <input type="button" value="VALIDATE NEW CARD" class="card__validator">
                                 </div>
                             </div>
                         </div>
                     </div>
                     <div id="menu3" class="tab-pane fade">
-                        <h3>Menu 3</h3>
-                        <p>Eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo.</p>
+                        <div class="input_new_card mt-40">
+                            <div class="input_new_card_title">
+                                Saved personal info
+                            </div>
+                            <div class="row">
+                                <div class="col-md-12">
+                                    <form action="#">
+                                        <div class="form__class">
+                                            <div class="left__form form--person">
+                                                <div class="mb-10">
+                                                    <label class="person-label" for="person-name">user name</label>
+                                                    <input id="person-name" type="text" class="input input--transfer input--person" placeholder="JOHN DOE">
+                                                </div>
+                                                <div class="mb-10">
+                                                    <label class="person-label" for="person-email">e-mail address</label>
+                                                    <input id="person-email" type="email" class="input input--transfer input--person" placeholder="john_doe@yahoo.com">
+                                                </div>
+                                                <div class="mb-10">
+                                                    <label class="person-label">e-mail address</label>
+                                                    <div class="select__person-block">
+                                                        <select class="input select--transfer select--person">
+                                                            <option value="01">01</option>
+                                                            <option value="02">02</option>
+                                                        </select>
+                                                        <select class="input select--transfer select--person">
+                                                            <option value="2000">2000</option>
+                                                            <option value="2001">2001</option>
+                                                        </select>
+                                                        <select class="input select--transfer select--person">
+                                                            <option value="2000">2000</option>
+                                                            <option value="2001">2001</option>
+                                                        </select>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="right__form form--person">
+                                                <div class="mb-10">
+                                                    <label class="person-label" for="person-address">user name</label>
+                                                    <input id="person-address" type="text" class="input input--transfer input--person" placeholder="JOHN DOE">
+                                                </div>
+                                                <div class="mb-10">
+                                                    <label class="person-label">region</label>
+                                                    <select class="input select--transfer select--full">
+                                                        <option value="01">01</option>
+                                                        <option value="02">02</option>
+                                                    </select>
+                                                </div>
+                                                <div class="mb-10">
+                                                    <label class="person-label">country</label>
+                                                    <select class="input select--transfer select--full">
+                                                        <option value="01">01</option>
+                                                        <option value="02">02</option>
+                                                    </select>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <input type="button" value="confirm cash out" class="card__validator confirm-card mt-40">
+                                    </form>
+                                </div>
+                            </div>
+                        </div>
+
+                        <hr class="dash big__dash" />
+
+                        <div class="input_new_card mt-40">
+                            <div class="input_new_card_title">
+                                Security options
+                            </div>
+                            <div class="row">
+                                <div class="col-md-12">
+                                    <form action="#">
+                                        <div class="form__class">
+                                            <div class="left__form form--person">
+                                                <div class="mb-10">
+                                                    <label class="person-label" for="security-password">current password</label>
+                                                    <input id="security-password" type="password" class="input input--transfer input--person">
+                                                </div>
+                                            </div>
+                                            <div class="right__form form--person">
+                                                <div class="mb-10">
+                                                    <label class="person-label" for="security-new-password">new password</label>
+                                                    <input id="security-new-password" type="password" class="input input--transfer input--person">
+                                                </div>
+                                                <div class="mb-10">
+                                                    <label class="person-label" for="security-confirm-password">confirm password</label>
+                                                    <input id="security-confirm-password" type="password" class="input input--transfer input--person">
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <input type="button" value="confirm changes" class="card__validator confirm-card mt-40">
+                                    </form>
+                                </div>
+                            </div>
+                        </div>
+
+                        <hr class="dash big__dash" />
+
+                        <div class="input_new_card">
+                            <div class="input_new_card_title">
+                                Saved transfer card:
+                            </div>
+                            <div class="row">
+                                <div class="col-md-12">
+                                    <form action="#">
+                                        <div class="form__class">
+                                            <div class="left__form">
+                                                <div class="mb-10">
+                                                    <input type="text" class="input input--transfer input--saved" placeholder="4558 - 1518 - 7888 - 1000">
+                                                </div>
+                                                <div class="mb-10">
+                                                    <input type="text" class="input input--transfer input--saved" placeholder="JOHN DOE">
+                                                </div>
+                                            </div>
+                                            <div class="right__form">
+                                                <div class="mb-10">
+                                                    <span class="input__text mr-10">expiry date</span>
+                                                    <select class="input select--transfer mr-10">
+                                                        <option value="01">01</option>
+                                                        <option value="02">02</option>
+                                                    </select>
+                                                    <select class="input select--transfer">
+                                                        <option value="2000">2000</option>
+                                                        <option value="2001">2001</option>
+                                                    </select>
+                                                </div>
+                                                <div class="mb-10">
+                                                    <span class="input__text mr-20">CVV/CV2</span>
+                                                    <input type="text" class="input input--transfer select--transfer">
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <input type="button" value="confirm cash out mt-40" class="card__validator confirm-card">
+                                    </form>
+                                </div>
+                            </div>
+                        </div>
                     </div>
                     <div id="menu4" class="tab-pane fade">
                         <div class='container'>
-                            <div class='row'>
+                            <div class='row support__tablet'>
                                 <div class='support_1'>
-                                <h3 class='h3_support'>f.a.q</h3>
+                                <h3 class='h3_support'>F.A.Q</h3>
                                     <div class="panel-group" id="accordion">
                                         <div class="panel panel-default">
                                             <div class="panel-heading">
@@ -394,7 +564,7 @@
                                 </div>
                                 <div class='support_2'>
                                     <h3 class='h3_support'>Ask us anything</h3>
-                                    <form class='dashboard5_form form_dashboard' action="#">
+                                    <form class='dashboard5_form form_dashboard' id="support__form" action="#">
                                         <div class="form-group">
                                             <input type="text" class="input__dash" placeholder="subject">
                                         </div>
@@ -403,7 +573,7 @@
                                         </div>
                                         <textarea class="input__dash input__dash__textarea" rows="6" id="message" placeholder="message"></textarea>
                                     </form>
-                                    <div class="button__item quick__button">
+                                    <div class="support__button__item">
                                         <a href="#">Send</a>
                                     </div>
                                 </div>
@@ -412,12 +582,12 @@
                     </div>
                 </div> 
             </div>
-        </div>
-        <div class="btcwdgt-chart" bw-theme="light"></div>
-    </div>	
+        </div>  
+        <div class="btcwdgt-chart" bw-theme="light" ></div>
+    </div>
 </section>
 
-<footer>
+<footer id='map_footer'>
     <div class="container">
         <div class="row">
             <div class="col-md-12">
@@ -456,48 +626,63 @@
             </div>
         </div>
         <div class="row">
-            <nav class="header__menu">
-                <ul class="menu__item d-flex justify-content-center align-items-center">
-                    <li class="menu__item__link">
-                        <a href="#">Home</a>
+            <div class="col-sm-12">
+                <ul class="footer__item__block d-flex">
+                    <li class="footer__item__link">
+                        <a href="index.html">Home</a>
                     </li>
-                    <li class="menu__item__link">
-                        <a href="#">My gifts</a>
+                    <li class="footer__item__link footer__item__link--active">
+                        <a href="dashboard.html">My gifts</a>
                     </li>
-                    <li class="menu__item__link">
-                        <a href="#">Contact</a>
+                    <li class="footer__item__link">
+                        <a href="contact.html">Contact</a>
                     </li>
-                    <li class="menu__item__link">
-                        <a href="#">Register</a>
+                    <li class="footer__item__link">
+                        <a href="#" data-toggle="modal" data-target="#register">Register</a>
                     </li>
-                    <li class="menu__item__link">
-                        <a href="#">Login</a>
+                    <li class="footer__item__link">
+                        <a href="#" data-toggle="modal" data-target="#exampleModalCenter">Login</a>
                     </li>
                 </ul>
-            </nav>
+            </div>
         </div>
         <div class="row">
             <p class="footer__copyright">Copyright Company Name 2018. All rights reserved</p>
         </div>
     </div>
-
-    <div class="modal fade " id="exampleModalCenter" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+    <div class="modal fade" id="register" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
         <div class="modal-dialog modal-dialog-centered" role="document">
             <div class="modal-content modal_css">
                 <div class="modal-header modal_header">
-                    <h4 class='h4-header'>LOGIN</h4>
+                    <h4 class='h4-header'>Register Account</h4>
                     <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                        <span aria-hidden="true">&times;</span>
+                        <span aria-hidden="true" class="popup__span">&times;</span>
                     </button>
                 </div>
                 <div class="modal-body">
                     <div class='row d-flex justify-content-center align-items-center'>
-                        <div class="col-md-5 left_name_input">user name<input type='text'></div>
-                        <div class="col-md-5 right_name_input">password<input type='text'></div>
+                        <div class="col-md-5 left_name_input">e-mail address<input type='text' class="popup__input"></div>
+                        <div class="col-md-5 right_name_input">card number<input type='text' class="popup__input"></div>
                     </div>
-                    <div class="modal-footer">
-                        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
-                        <button type="button" class="btn btn-primary">Save changes</button>
+                    <div class="check__block">
+                        <span>
+                            <input type="checkbox" class="form-check-input" id="exampleCheck1">
+                        </span>
+                        <span>I accept the</span>
+                        <span>
+                            <a href="#" class="check__link">Terms and Condtions</a>
+                        </span>
+                        <div class="circle__btn__item__popup">
+                            <img src="img/button-arrow.png" alt="arrow-left" class="button-arrow">
+                        </div>
+                        <div class="button__item__popup">
+                            <a href="#">Create Account</a>
+                        </div>
+                        <hr class="dash">
+                        <p class="text__item__popup">
+                            Once the account is creeating an e-mail will be send to your address with a confirmation link and
+                            a temporary password which you can change under ‘My Account’ section in the ‘My Gifts’ page.
+                        </p>
                     </div>
                 </div>
             </div>

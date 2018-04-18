@@ -10,9 +10,24 @@
 }
 
 form {
-    background: #f4f4f4;
+    /* background: #f4f4f4; */
     border-radius: 10px;
     margin: 30px 0;
+}
+
+#support__form {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.card_form {
+    background: #f4f4f4;
+}
+
+#message {
+    background: #f4f4f4
 }
 
 p {
@@ -47,11 +62,11 @@ p {
 }
 
 .value_1 {
-    font-size: 68px;
+    font-size: 32px;
 }
 
 .value_2 {
-    font-size: 34px;
+    font-size: 20px;
 }
 
 .cash_in_my_btc {
@@ -65,8 +80,30 @@ p {
 /*DASHBOARD======*/
 
 /* MY WALLET & CARDS */
-.tabs__logo__white {
-    width: 30px;
+
+.icon_blue, .icon_white {
+    width: 25px;
+}
+
+.active .icon_white,
+.icon_hover:hover .icon_white,
+.icon_blue {
+    display: none;
+}
+
+.active .icon_blue,
+.icon_hover:hover .icon_blue,
+.icon_white {
+    display: block;
+}
+
+.icon_hover:hover .li_active{
+    background: #fff;
+    color: #45708f;
+}
+
+.tabs_text {
+    padding-left: 15px;
 }
 
 .dash {
@@ -178,7 +215,22 @@ p {
     color: #45708f;
 }
 
+#value1 {
+    font-size: 64px;
+}
+
+#value2 {
+    font-size: 32px;
+}
+
+#value3 {
+    font-size: 19px;
+}
+
 #pick_input {
+    width: 65px;
+    padding: 8px;
+    margin-left: 10px;
     height: 36px;
     border: 0;
     background: #f4f4f4;
@@ -249,20 +301,7 @@ p {
     border: 1px;
     padding: 2px 20px;
 }
-
-.li_active:hover {
-    background: #fff;
-    color: #45708f;
-}
-
-
-
-
 /* CASH OUT */
-.value_cash_1 {
-    font-size: 28px;
-}
-
 .value_cash_3 {
     font-size: 19px;
 }
@@ -275,7 +314,8 @@ p {
 }
 
 .small__dash {
-    margin: 10px 0 15px 0;
+    width: 96%;
+    margin: 10px 0 15px 0!important;
 }
 
 .cash__input__first {
@@ -310,6 +350,7 @@ p {
 }
 
 .form__class {
+    /* background: #f4f4f4; */
     display: flex;
     justify-content: center;
     margin: 30px 0 20px 0;
@@ -334,9 +375,24 @@ p {
     margin-left: 20px;
 }
 
+.form-group {
+    background: #f4f4f4;
+    width: 90%;
+    border-radius: 5px;
+}
 
 
 @media screen and (max-width: 992px)  {
+    .card_form {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .card__validator {
+        right: 0;
+        bottom: 0;
+    }
+
     .container_dashboard {
         width: 100%;
     }
@@ -365,8 +421,12 @@ p {
     .my_wallet_second {
         margin-top: 20px;
     }
-    
-    form {
+    .table_css {
+        display: block;
+        overflow-x: auto;
+        white-space: nowrap;
+    }
+    .form__class {
         margin: 0 auto;
         display: flex;
         flex-direction: column;
@@ -375,6 +435,19 @@ p {
 
     .card__validator {
         right: 0;
+    }
+
+    .support__tablet {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .support_1, .support_2 {
+        width: 100%!important;
+    }
+
+    .support_1 {
+        padding-left: 55px!important;
     }
 }
 
@@ -407,7 +480,7 @@ p {
 
 /* HISTORY------------------------------------------------------------------------------------------------- */
 .table_css{
-	margin:15px 15px 15px 0px;
+	margin:22px 0px 0px 0px;
 	width:100%;
 	height:100%;
 	padding:18px;
@@ -427,12 +500,14 @@ p {
 }
 .table td, .table th {
     padding: .75rem;
-    vertical-align: top;
+    vertical-align:middle;
     border-top: none !important;
 }
 .table thead th {
     vertical-align: bottom;
     border-bottom: 2px dotted #dee2e6;
+    font-weight: 100;
+    font-family: Roboto;
 }
 .table-strip tbody tr:nth-of-type(even) {
     background-color: rgba(0,0,0,.05);
@@ -444,7 +519,7 @@ p {
 }
 .table td, .table th {
     padding: .75rem;
-    vertical-align: top;
+    vertical-align: middle;
     border-top: none !important;
     text-align: center;
 }
@@ -469,6 +544,22 @@ p {
 	font-weight: 700;
 	line-height: 60px;
 }
+.select__eu{
+    background-color: #f4f4f4;
+    border-radius: 7px;
+    border: none;
+    width:47px;
+    padding: 5px 3px;
+}
+.no-padding{
+    padding-right:0;
+    padding-left:0;
+}
+th{
+    font-weight:0;
+}
+
+
 /* Support------------------------------------------------------------------------- */
 .support_1{
 	width:50%;
@@ -486,10 +577,9 @@ p {
 }
 .h3_support{
 	font-family: Arvo;
-	font-size: 28px;
+	font-size: 20px;
 	font-weight: 700;
 	line-height: 32.66px;
-	text-transform: uppercase;
 	padding-left: 28px;
 	text-align: left;
 }
@@ -503,7 +593,7 @@ p {
 	justify-content:center;
 	align-items:center;
 	margin-bottom:25px;
-	margin-top: 17px;
+	margin-top: 27px;
 }
 .panel-heading {
 	width: 90%;
@@ -518,11 +608,13 @@ p {
     display: flex;
     justify-content: space-between;
 	margin:0;
-	font-family: Roboto;
+	font-family: 'Roboto';
 }
 .panel-title a {
+    font-family: 'Roboto';
 	font-size:11px;
-	color: #45708f;
+    color: #45708f;
+    font-weight: 700;
 }
 .panel-body {
 	font-size:11px;
@@ -536,11 +628,11 @@ p {
 	width:90%;
 }
 .input__dash{
-	    background: #f4f4f4;
+    background: #f4f4f4;
     border: none;
     height: 50px;
     border-radius: 5px;
-    padding: 20px;
+    padding: 20px 20px 20px 0;
     width: 90%;
     color: #000;
 	height: 100%;
@@ -548,7 +640,8 @@ p {
 	
 }
 .input__dash__textarea {
-	height:230px;
+    height:230px;
+    padding-left: 20px;
 }
 .input__dash::placeholder {
 	    color: #565652;
@@ -558,23 +651,20 @@ p {
 	text-align: left;
     padding: 20px 37px;
 }
-.button__item  a {
+.support__button__item {
+    text-align: left;
+    margin-left: 26px;
+}
+.support__button__item  a {
     box-shadow: 0 0 2px 0 #cea14e;
     background-color: #f2b852;
     color: #45708f;
     font-size: 27px;
-    font-weight: 700;
+    font-weight: 400;
     text-transform: uppercase;
     border-radius: 5px;
-    position: relative;
-    bottom: 10px;
-    right: 10px;
-    border: 1px;
-    padding: 2px 20px;
-	text-align:left;
-	line-height: 57.68px;
-	letter-spacing: 0.74px;
-	font-family: "Bebas Neue Bold";
+    padding: 5px 23px;
+    font-family: "BebasNeue Regular";
 }
 .panel-body{
 	color:black;
@@ -583,5 +673,4 @@ p {
 	color: #565652 !important;
 	
 }
-
 

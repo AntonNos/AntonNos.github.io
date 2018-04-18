@@ -1,3 +1,5 @@
+@import url('bebas.css');
+
 /*SECTION BITCOIN=============================================*/
 #bitcoin {
     position: relative;
@@ -13,8 +15,15 @@
     max-width: 715px;
 }
 .client__title__item {
-    line-height: 25px;
+    line-height: 30px;
 }
+.client__title__item:nth-child(1) {
+    font-size: 22px;
+}
+.client__title__item:nth-child(2) {
+    margin-left:20px;
+}
+
 .client__title__block {
     line-height: 20px;
 }
@@ -42,7 +51,7 @@
     top: -65px;
 }
 .name__title__block {
-    margin-top: -60px;
+    margin-top: -20px;
     margin-bottom: 60px;
 }
 .name__title__item {
@@ -50,4 +59,20 @@
     font-weight: 700;
     font-size: 20px;
     margin: 0;
+}
+
+.name__title__text {
+    text-align: center;
+}
+
+#bitcoin .what__title__block {
+    margin-top: 80px;
+}
+
+#bitcoin .what__title__item:nth-child(1) {
+    font-size: 28px;
+}
+
+#what_bitcoin {
+    font-size: 37px!important;
 }

@@ -7,14 +7,16 @@
     <link href="https://fonts.googleapis.com/css?family=Roboto:100,300,400,700" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Arvo:400,700" rel="stylesheet">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link rel="stylesheet" type="text/css" href="slick-1.8.0/slick/slick.css"/>
     <link rel="stylesheet" href="css/main.css">
     <link rel="stylesheet" href="css/hamburger.css">
-    <link rel="stylesheet" href="css/modal.css">
     <link rel="stylesheet" href="css/section_main.css">
     <link rel="stylesheet" href="css/section_work.css">
     <link rel="stylesheet" href="css/section_bitcoin.css">
+    <link rel="stylesheet" href="css/contact.css">
     <link rel="stylesheet" href="css/section_quick.css">
     <link rel="stylesheet" href="css/footer.css">
+    <link rel="stylesheet" href="css/modal.css">
 </head>
 <body>
 <section id="main">
@@ -28,12 +30,10 @@
             </div>
             <div class="col-md-4">
                 <a class="header__logo" href="index.html">
-                    <img src="img/logo.png" alt="logo" class="logo__item">
+                    <img src="img/logo.png" alt="l" class="logo__item">
                 </a>
             </div>
-            <div class="col-md-4">
-
-            </div>
+            <div class="col-md-4"></div>
         </div>
         <div class="row">
             <nav class="header__menu">
@@ -48,7 +48,7 @@
                         <a href="contact.html">Contact</a>
                     </li>
                     <li class="menu__item__link">
-                        <a href="#">Register</a>
+                        <a href="#" data-toggle="modal" data-target="#register">Register</a>
                     </li>
                     <li class="menu__item__button">
                         <a href="#" data-toggle="modal" data-target="#exampleModalCenter">Login</a>
@@ -56,7 +56,7 @@
                 </ul>
             </nav>
         </div>
-        <div class="outer-menu ">
+        <div class="outer-menu">
             <input class="checkbox-toggle" type="checkbox" />
             <div class="hamburger">
                 <div></div>
@@ -68,7 +68,7 @@
                             <li><a href="#">Home</a></li>
                             <li><a href="dashboard.html">My Gifts</a></li>
                             <li><a href="contact.html">Contact</a></li>
-                            <li><a href="#">Register</a></li>
+                            <li><a href="#" data-toggle="modal" data-target="#register">Register</a></li>
                             <li><a href="#" class="outer__menu__button" data-toggle="modal" data-target="#exampleModalCenter">Login</a></li>
                         </ul>
                     </div>
@@ -79,8 +79,13 @@
             <div class="col-md-12">
                 <div class="gift__card__block">
                     <div class="gift__card__background">
-                        <img src="img/card.png" alt="Card" class="gift__card__item">
-                        <input type="password" placeholder="**** **** **** ****" class="input__gift__card">
+                        <img src="img/card-2.png" alt="Card" class="gift__card__item">
+                        <input type="password" placeholder="**** **** **** ****" maxlength="16" class="input__gift__card__home">
+                        <p class="gift__card__back__item">
+                            <a href='#' class='gift__card__a'>
+                                Validate my card
+                            </a>
+                        </p>
                     </div>
                 </div>
             </div>
@@ -101,9 +106,9 @@
             <div class="col-md-12">
                 <div class="what__title__block">
                     <p class="what__title__item text-uppercase">What</p>
-                    <p class="what__title__item">is it<span>?</span></p>
+                    <p class="what__title__item what__title--second">is it<span class="what__title__question">?</span></p>
                 </div>
-                <div class="what__title__text">
+                <div class="what__title__text what__title__text--index">
                     <p>
                         Bitgifting makes it easy to gift Bitcoins to your friends and family. Bitgifting giftcards are for sale at Primera, in
                         denominations of <span class="what__title__number">10</span>, <span class="what__title__number">25</span>, <span class="what__title__number">50</span> and <span class="what__title__number">100 euro</span>.
@@ -147,7 +152,7 @@
                         <div class="image__item">
                             <img src="img/work-pictures.png" alt="work-pictures">
                         </div>
-                        <div class="text__item">
+                        <div class="text__item another__text__item">
                             <p>scratch the layer
                                 on the back of
                                 the card to show
@@ -210,7 +215,7 @@
         <div class="row">
             <div class="col-md-12">
                 <div class="what__title__block bitcoin__title__block">
-                    <p class="what__title__item text-uppercase bitcoin__title__item">Bitcoin</p>
+                    <p class="what__title__item text-uppercase bitcoin__title__item" id="what_bitcoin">Bitcoin</p>
                     <p class="what__title__item bitcoin__title__item">today</p>
                 </div>
                 <div class="what__title__text bitcoin__title__text">
@@ -224,64 +229,97 @@
         <div class="btcwdgt-chart" bw-theme="light"></div>
         <div class="row">
             <div class="col-md-12">
-                <div class="what__title__block client__title__block">
-                    <p class="what__title__item text-uppercase client__title__item">Client.</p>
-                    <p class="what__title__item client__title__item">testimonials</p>
-                </div>
-                <div class="client__title__text">
-                    <p><span>“</span>Testimonial here lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum cursus ante in nunc
-                        aliquet, vitae sagittis risus mattis. Fusce turpis erat, volutpat quis arcu feugiat, suscipit pretium lectus.
-                        Quisque vitae scelerisque lorem</p><span class="second__quote">“</span>
-                    </p>
-                </div>
-                <div class="arrows__block">
-                    <div class="left__arrow">
-                        <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="22" height="31" viewBox="0 0 72 111"><defs><path id="m6fna" d="M815.97 7703.3l-36.18 36.19 36.18 36.18c1.49 1.5 1.49 3.91 0 5.4l-10.8 10.8a3.82 3.82 0 0 1-5.4 0L760.91 7753l-.01-.01-10.8-10.8a3.82 3.82 0 0 1 0-5.4l10.8-10.8.01-.02 38.86-38.87c1.5-1.49 3.9-1.49 5.4 0l10.8 10.8c1.49 1.5 1.49 3.91 0 5.4z"/></defs><g><g transform="translate(-747 -7684)"><use fill="#fff" xlink:href="#m6fna"/><use fill="#fff" xlink:href="#m6fna"/></g></g></svg>
+                <div class="single-item">
+                    <div>
+                        <div class="what__title__block client__title__block">
+                            <p class="what__title__item text-uppercase client__title__item">Client.</p>
+                            <p class="what__title__item client__title__item">testimonials</p>
+                        </div>
+                        <div class="client__title__text">
+                            <p><span>“</span>Testimonial here lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum cursus ante in nunc
+                                aliquet, vitae sagittis risus mattis. Fusce turpis erat, volutpat quis arcu feugiat, suscipit pretium lectus.
+                                Quisque vitae scelerisque lorem</p><span class="second__quote">“</span>
+                            </p>
+                        </div>
+                        <div class="name__title__block">
+                            <p class="name__title__item">Alfons Greuton</p>
+                            <p class="name__title__text">C.E.O. Company Name, Netherlands</p>
+                        </div>
                     </div>
-                    <div class="right__arrow">
-                        <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="22" height="31" viewBox="0 0 72 111"><defs><path id="9v40a" d="M3023 7697.9l10.8-10.8c1.5-1.49 3.91-1.49 5.4 0l38.85 38.86.03.03 10.8 10.8c1.49 1.49 1.49 3.9 0 5.4l-10.8 10.8-.03.02-38.84 38.86a3.82 3.82 0 0 1-5.4 0l-10.8-10.8a3.82 3.82 0 0 1 0-5.4l36.17-36.18-36.17-36.19a3.82 3.82 0 0 1 0-5.4z"/></defs><g><g transform="translate(-3020 -7684)"><use fill="#fff" xlink:href="#9v40a"/><use fill="#fff" xlink:href="#9v40a"/></g></g></svg>
+                    <div>
+                        <div class="what__title__block client__title__block">
+                            <p class="what__title__item text-uppercase client__title__item">Client.</p>
+                            <p class="what__title__item client__title__item">testimonials</p>
+                        </div>
+                        <div class="client__title__text">
+                            <p><span>“</span>Testimonial here lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum cursus ante in nunc
+                                aliquet, vitae sagittis risus mattis. Fusce turpis erat, volutpat quis arcu feugiat, suscipit pretium lectus.
+                                Quisque vitae scelerisque lorem</p><span class="second__quote">“</span>
+                            </p>
+                        </div>
+                        <div class="name__title__block">
+                            <p class="name__title__item">Alfons Greuton</p>
+                            <p class="name__title__text">C.E.O. Company Name, Netherlands</p>
+                        </div>
                     </div>
-                </div>
-                <div class="name__title__block">
-                    <p class="name__title__item">Alfons Greuton</p>
-                    <p class="desc__title__item">C.E.O. Company Name, Netherlands</p>
+                    <div>
+                        <div class="what__title__block client__title__block">
+                            <p class="what__title__item text-uppercase client__title__item">Client.</p>
+                            <p class="what__title__item client__title__item">testimonials</p>
+                        </div>
+                        <div class="client__title__text">
+                            <p><span>“</span>Testimonial here lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum cursus ante in nunc
+                                aliquet, vitae sagittis risus mattis. Fusce turpis erat, volutpat quis arcu feugiat, suscipit pretium lectus.
+                                Quisque vitae scelerisque lorem</p><span class="second__quote">“</span>
+                            </p>
+                        </div>
+                        <div class="name__title__block">
+                            <p class="name__title__item">Alfons Greuton</p>
+                            <p class="name__title__text">C.E.O. Company Name, Netherlands</p>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
     </div>
 </section>
 <section id="quick">
-    <div class="container">
+    <div class="container mb-80">
         <div class="row">
-            <div class="col-md-12">
+            <div class="col-md-12 d-flex flex-column align-items-center">
                 <div class="what__title__block">
                     <p class="what__title__item text-uppercase quick__title__item">Quick</p>
-                    <p class="what__title__item contact__title__item">contact</p>
+                    <p class="what__title__item what__title--second">contact</p>
                 </div>
                 <form action="#">
-                    <div class="left__form">
-                        <div class="form-group">
-                            <input type="text" class="input" placeholder="your name:">
+                    <div class="cont__form">
+                        <div class="left__form">
+                            <div class="input__block">
+                                <label>your name:</label>
+                                <input type="text" class="input">
+                            </div>
+                            <div class="input__block">
+                                <label>your email:</label>
+                                <input type="text" class="input">
+                            </div>
+                            <div class="input__block">
+                                <label>subject:</label>
+                                <input type="text" class="input">
+                            </div>
                         </div>
-                        <div class="form-group">
-                            <input type="email" class="input" placeholder="your email:">
-                        </div>
-                        <div class="form-group">
-                            <input type="text" class="input" placeholder="subject">
+                        <div class="right__form">
+                            <textarea class="input__textarea" rows="6" id="message" placeholder="message"></textarea>
                         </div>
                     </div>
-                    <div class="right__form">
-                        <textarea class="input" rows="6" id="message" placeholder="message"></textarea>
+                    <div class="button__item quick__button">
+                        <input class="button__submit" type="submit" value="Send message">
                     </div>
                 </form>
-                <div class="button__item quick__button">
-                    <a href="#">Send message</a>
-                </div>
             </div>
         </div>
     </div>
 </section>
-<footer>
+<footer id='map_footer'>
     <div class="container">
         <div class="row">
             <div class="col-md-12">
@@ -320,54 +358,102 @@
             </div>
         </div>
         <div class="row">
-            <nav class="header__menu">
-                <ul class="menu__item d-flex justify-content-center align-items-center">
-                    <li class="menu__item__link">
-                        <a href="#">Home</a>
+            <div class="col-sm-12">
+                <ul class="footer__item__block d-flex">
+                    <li class="footer__item__link footer__item__link--active">
+                        <a href="index.html">Home</a>
                     </li>
-                    <li class="menu__item__link">
-                        <a href="#">My gifts</a>
+                    <li class="footer__item__link">
+                        <a href="dashboard.html">My gifts</a>
                     </li>
-                    <li class="menu__item__link">
-                        <a href="#">Contact</a>
+                    <li class="footer__item__link">
+                        <a href="contact.html">Contact</a>
                     </li>
-                    <li class="menu__item__link">
-                        <a href="#">Register</a>
+                    <li class="footer__item__link">
+                        <a href="#" data-toggle="modal" data-target="#register">Register</a>
                     </li>
-                    <li class="menu__item__link">
-                        <a href="#">Login</a>
+                    <li class="footer__item__link">
+                        <a href="#" data-toggle="modal" data-target="#exampleModalCenter">Login</a>
                     </li>
                 </ul>
-            </nav>
+            </div>
         </div>
         <div class="row">
             <p class="footer__copyright">Copyright Company Name 2018. All rights reserved</p>
         </div>
     </div>
-
-    <div class="modal fade " id="exampleModalCenter" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+    <div class="modal fade" id="exampleModalCenter" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
         <div class="modal-dialog modal-dialog-centered" role="document">
             <div class="modal-content modal_css">
                 <div class="modal-header modal_header">
-                    <h4 class='h4-header'>LOGIN</h4>
+                    <h4 class='h4-header'>Login</h4>
                     <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                        <span aria-hidden="true">&times;</span>
+                        <span aria-hidden="true" class="popup__span">&times;</span>
                     </button>
                 </div>
                 <div class="modal-body">
                     <div class='row d-flex justify-content-center align-items-center'>
-                        <div class="col-md-5 left_name_input">user name<input type='text'></div>
-                        <div class="col-md-5 right_name_input">password<input type='text'></div>
+                        <div class="col-md-5 left_name_input">user name<input type='text' class="popup__input"></div>
+                        <div class="col-md-5 right_name_input">password<input type='text' class="popup__input"></div>
                     </div>
-                    <div class="modal-footer">
-                        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
-                        <button type="button" class="btn btn-primary">Save changes</button>
+                    <div class="check__block">
+                        <div class="circle__btn__item__popup">
+                            <img src="img/tabs-icon/people-blue.png" alt="people" class="button-people">
+                        </div>
+                        <div class="button__item__popup">
+                            <a href="#">Login</a>
+                        </div>
+                        <div class='recovery'>
+                            <a href="#" class="check__link__rec">i forgot my login details</a>
+                        </div>
+                        <div>
+                            <a href="#" class="check__link__rec">password recovery</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            </div>
+        </div>
+    <div class="modal fade " id="register" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered" role="document">
+            <div class="modal-content modal_css">
+                <div class="modal-header modal_header">
+                    <h4 class='h4-header'>Register Account</h4>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true" class="popup__span">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <div class='row d-flex justify-content-center align-items-center'>
+                        <div class="col-md-5 left_name_input">e-mail address<input type='text' class="popup__input"></div>
+                        <div class="col-md-5 right_name_input">card number<input type='text' class="popup__input"></div>
+                    </div>
+                    <div class="check__block">
+                        <span>
+                            <input type="checkbox" class="form-check-input" id="exampleCheck1">
+                        </span>
+                        <span>I accept the</span>
+                        <span>
+                            <a href="#" class="check__link">Terms and Condtions</a>
+                        </span>
+                        <div class="circle__btn__item__popup">
+                            <img src="img/tabs-icon/people-blue.png" alt="people" class="button-people">
+                        </div>
+                        <div class="button__item__popup">
+                            <a href="#">Create Account</a>
+                        </div>
+                        <hr class="dash">
+                        <p class="text__item__popup">
+                            Once the account is creeating an e-mail will be send to your address with a confirmation link and
+                            a temporary password which you can change under ‘My Account’ section in the ‘My Gifts’ page.
+                        </p>
                     </div>
                 </div>
             </div>
         </div>
     </div>
 </footer>
+
 <script>
     (function(b,i,t,C,O,I,N) {
         window.addEventListener('load',function() {
@@ -380,6 +466,7 @@
 <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+<script type="text/javascript" src="slick-1.8.0/slick/slick.min.js"></script>
 <script src="js/script.js"></script>
 </body>
 </html>

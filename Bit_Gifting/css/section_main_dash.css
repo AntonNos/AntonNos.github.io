@@ -1,3 +1,5 @@
+@import url('bebas.css');
+
 /*SECTION MAIN================================*/
 
 #dashboard {
@@ -5,7 +7,7 @@
 }
 
 .header__menu {
-    margin-top: 20px;
+    margin: 10px auto 0 auto;
 }
 
 .menu__item__link {
@@ -21,7 +23,7 @@
     color: #45708f;
     font-weight: 700;
     line-height: 32px;
-    font-size: 18px;
+    font-size: 16px;
 }
 
 .menu__item__button {
@@ -107,9 +109,9 @@
 .button__item a {
     box-shadow: 0 6px 0 #e3e3e3;
     background-color: #fff;
-    padding: 6px 40px;
+    padding: 16px 40px;
     color: #45708f;
-    font-size: 25px;
+    font-size: 18px;
     font-weight: 700;
     line-height: 58px;
     text-transform: uppercase;
@@ -142,10 +144,103 @@
 .what__title__item {
     font-size: 45px;
     font-weight: 700;
-    line-height: 5px;
+    line-height: 15px;
     margin-bottom: 0;
 }
 
-.what__title__item:nth-child(2) {
-    margin-left: 90px;
+.form--person {
+    max-width: 340px;
+    width: 340px;
+}
+
+.input--transfer {
+    color: #565652;
+    font-size: 14px;
+    font-weight: 400;
+    height: 50px;
+    background-color: #f4f4f4;
+}
+
+.input--person {
+    width: 100%;
+}
+
+.input--transfer::placeholder {
+    color: #565652;
+}
+
+.select--transfer {
+    background-color: #f4f4f4;
+    height: 50px;
+    color: #565652;
+    max-width: 100px;
+    padding-left: 20px;
+}
+
+.input__text {
+    opacity: 0.55;
+    color: #565652;
+    font-size: 14px;
+    font-weight: 400;
+}
+
+.confirm-card {
+    margin: 0 auto;
+    display: block;
+    cursor: pointer;
+}
+
+.person-label {
+    display: block;
+    opacity: 0.5;
+    color: #565652;
+    font-size: 14px;
+    font-weight: 400;
+    padding-left: 20px;
+    margin-bottom: 0;
+}
+
+.select__person-block {
+    display: flex;
+    justify-content: space-between;
+}
+
+.select--person {
+    margin-right: 10px;
+}
+
+.select--person:last-of-type {
+    margin-right: 0;
+}
+
+.select--full {
+    width: 100%;
+    max-width: 100%;
+}
+
+.input--saved {
+    width: 340px;
+}
+
+@media screen and (min-width: 768px) and (max-width: 991px) { 
+    .input--person {
+        width: 80%;
+        margin-left: 20px;
+    }
+    .select--full {
+        width: 100%;
+        max-width: 80%;
+        margin-left: 40px;
+    }
+    .select--transfer {
+        padding-left: 15px;
+        margin-left: 20px;
+    }
+    .person-label {
+        
+        margin-left: 30px;
+    }
+    .input--saved {
+        width: 300px;
+    }
 }

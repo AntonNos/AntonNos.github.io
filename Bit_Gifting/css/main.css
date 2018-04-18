@@ -1,3 +1,5 @@
+@import url('bebas.css');
+
 /*SPECIFICATION=========================*/
 
 body {
@@ -22,8 +24,22 @@ a:hover {
     color: #45708f;
 }
 
-
+@media screen and (min-width: 1600px) {
+    #work {
+        height: 43vw!important;
+    }
+}
+@media screen and (min-width: 1200px) {
+    #work {
+        height: 50vw;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+}
 @media screen and (max-width: 767px){
+
+
     form {
         flex-direction: column;
         align-items: center;
@@ -47,7 +63,7 @@ a:hover {
     .input__gift__card {
         left: 20%;
         height: 45px;
-        max-width: 58%;
+        max-width: 65%;
         font-size: 15px;
     }
     .second__quote {
@@ -74,4 +90,90 @@ a:hover {
 
 .header__lang--active {
     color: white;
+}
+
+
+/*SLICK SLIDER */
+
+.single-item {
+    max-width: 750px;
+    margin: 0 auto;
+}
+
+.slick-arrow {
+    width: 22px;
+    height: 32px;
+    background: transparent;
+    position: absolute;
+    color: transparent;
+    top: 55%;
+    border: none;
+    cursor: pointer;
+}
+
+.slick-arrow:focus,
+.slick-arrow:active {
+    outline: none;
+}
+
+.slick-prev {
+    left: -90px;
+}
+
+.slick-next {
+    right: -90px;
+}
+
+.slick-prev:after {
+    content: '';
+    position: absolute;
+    background: url('../img/left-arrow.svg');
+    background-size: cover;
+    width: 22px;
+    height: 32px;
+    top: 0;
+    left: 0;
+}
+
+.slick-next:after {
+    content: '';
+    position: absolute;
+    background: url('../img/right-arrow.svg');
+    background-size: cover;
+    width: 22px;
+    height: 32px;
+    top: 0;
+    left: 0;
+}
+
+.container .btcwdgt-chart {
+    margin: 30px auto !important;
+}
+
+.mb-80 {
+    margin-bottom: 80px;
+}
+
+.mb-160 {
+    margin-bottom: 160px;
+}
+
+.mb-10 {
+    margin-bottom: 10px;
+}
+
+.mr-10 {
+    margin-right: 10px;
+}
+
+.mr-20 {
+    margin-right: 20px;
+}
+
+.mt-20 {
+    margin-top: 20px !important;
+}
+
+.mt-40 {
+    margin-top: 40px !important;
 }
