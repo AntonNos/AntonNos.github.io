@@ -1,0 +1,130 @@
+/*Content*/
+@media screen and (max-width: 767px) {
+    #header .header__title {
+        font-size: 30px;
+    }
+    .middle,
+    .pseudo__sirc:after,
+    .pseudo__sirc__second:after,
+    .pseudo__sirc__third:after,
+    .pseudo__sirc__fourth:after {
+        display: none;
+    }
+    .year__blocks {
+        flex-direction: column;
+    }
+    .year__block__second {
+        padding-top: 0;
+    }
+    .outer-menu .menu > div > div > ul > li {
+        margin: 2em;
+    }
+    .hamb__link {
+        font-size: 26px;
+    }
+    .mobile__last__title {
+        padding-top: 100px;
+    }
+    h2 {
+        font-size: 27px;
+    }
+    .provide__button {
+        bottom: 200px;
+    }
+    #contact {
+        margin: 0;
+    }
+    .contact__link__block {
+        margin-bottom: 50px;
+    }
+    .contact__links {
+        flex-direction: column;
+    }
+    form {
+        margin-top: 50px;
+    }
+    .header__menu {
+        display: none;
+    }
+
+    .outer-menu {
+        display: block;
+        position: absolute;
+        top: 3vh;
+        left: 78%;
+    }
+    .logo__item__small {
+        text-align: left;
+    }
+}
+@media screen and (min-width: 768px) {
+    .header__menu {
+        display: block;
+    }
+    .outer-menu {
+        display: none;
+    }
+}
+@media screen and (max-width: 1024px) {
+  a{
+      font-size: 12px;
+  }
+
+.header__title__block {
+    margin-top: 200px;
+}
+.header__circle__block {
+    margin-top: 184px;
+    margin-bottom: 52px;
+}
+#team .header__title__block {
+    margin-top: 82px;
+}
+.guy__item__two {
+    position:relative; 
+    top: 0; 
+}
+.guy__column {
+    display: flex;
+    flex-direction: column;
+}
+.team__guys__top {
+    margin:0;
+    padding:0;
+  }
+.team__guys__bottom {
+    flex-direction: column;
+}
+#provide {
+    margin-top: 350px;
+    background: url('../img/provide-section.png') no-repeat center top / cover;
+}
+.service__block {
+    flex-direction: column;
+    margin-bottom: 80%;
+}
+.service__text{
+    font-size:14px;
+}
+.service__title {
+    font-size: 23px;
+}
+.service__circle {
+    width: 142px;
+    height: 142px;
+    border: 6px solid #fff;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 200px auto 43px auto;
+}
+.service__block__item{
+    margin-top: -106px;
+}
+}
+@media screen and (max-width: 424px) {
+    .outer-menu .hamburger {
+        left: -35px;
+    }
+}
