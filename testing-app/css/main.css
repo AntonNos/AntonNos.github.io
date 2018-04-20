@@ -1,0 +1,15 @@
+/*Fonts Upload*/
+@font-face {
+    font-family: HelveticaNeueLTPro-LtIt;
+    src: url("../fonts/HelveticaNeueLTPro-LtIt.otf") format("opentype");
+}
+@font-face {
+    font-family: Helvetica Neu Bold;
+    src: url("../fonts/HelveticaNeueLTPro-Roman.otf") format("opentype");
+}
+/*Specification*/
+body {
+    font-family: 'Montserrat', sans-serif;
+    font-family: 'Roboto', sans-serif;
+    font-family: 'Merriweather', serif;
+}
