@@ -1,0 +1,16 @@
+.clients {
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 20px;
+    &__item {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 25%;
+        margin-bottom: 60px;
+        transition: 0.3s all;
+        &:hover {
+            box-shadow: 0 25px 43px rgba(0, 0, 0, 0.1);
+        }
+    }
+}
