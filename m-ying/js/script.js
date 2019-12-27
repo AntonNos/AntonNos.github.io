@@ -3,7 +3,7 @@ function setImgToBackground(img_selector, parent_selector) {
         return false;
     }
     var $parent, $imgDataHidden, _this;
-    $(img_selector).each(function() {
+    $(img_selector).each(function () {
         _this = $(this);
         $imgDataHidden = _this.data('hidden-js');
         $parent = _this.closest(parent_selector);
@@ -18,6 +18,37 @@ function setImgToBackground(img_selector, parent_selector) {
     });
 }
 
-$(window).on('load', function() {
+var swiper = new Swiper('.swiper-container', {
+    slidesPerView: 3,
+    spaceBetween: 30,
+    pagination: {
+        el: '.swiper-pagination',
+        clickable: true,
+    },
+    navigation: {
+        nextEl: '.swiper-button-next',
+        prevEl: '.swiper-button-prev',
+    },
+    breakpoints: {
+        320: {
+            slidesPerView: 1,
+            spaceBetween: 0,
+        },
+        767: {
+            slidesPerView: 1,
+            spaceBetween: 0,
+        },
+        991: {
+            slidesPerView: 2,
+            spaceBetween: 20,
+        },
+        1199: {
+            slidesPerView: 3,
+            spaceBetween: 30,
+        },
+    }
+});
+
+$(window).on('load', function () {
     setImgToBackground('.bg-image-js');
 })

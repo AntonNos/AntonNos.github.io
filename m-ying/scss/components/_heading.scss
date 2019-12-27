@@ -35,6 +35,7 @@
         }
     }
     &__title {
+        position: relative;
         color: #222527;
         font-size: 40px;
         line-height: 1.25;
@@ -44,6 +45,24 @@
             font-weight: 400;
             @media (max-width: 1199px) {
                 font-size: 24px;
+            }
+        }
+        &.mod-underline {
+            &::after {
+                position: absolute;
+                bottom: -12px;
+                left: 50%;
+                transform: translateX(-50%);
+                content: "";
+                display: block;
+                width: 32px;
+                height: 4px;
+                background-color: $c_primary;
+                @media (max-width: 991px) {
+                    bottom: -10px;
+                    width: 28px;
+                    height: 3px;
+                }
             }
         }
         @media (max-width: 1199px) {

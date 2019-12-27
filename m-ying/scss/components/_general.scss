@@ -12,3 +12,19 @@
 img {
     max-width: 100%;
 }
+
+.p-relative {
+    position: relative;
+}
+
+input,
+textarea,
+button {
+    &:focus {
+        outline: none;
+    }
+}
+
+textarea {
+    min-height: 80px;
+}
