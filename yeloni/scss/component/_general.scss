@@ -1,0 +1,42 @@
+* {
+    font-family: $f_montserrat;
+    font-weight: 500;
+    color: $c_text;
+    -webkit-font-smoothing: antialiased;
+}
+
+.y-wrapper {
+    height: 100vh;
+    min-height: 100%;
+    overflow: hidden;
+}
+
+.y-main {
+    display: flex;
+    height: 100%;
+}
+
+img,
+.svg {
+    max-width: 100%;
+}
+
+input,
+textarea,
+button,
+.btn {
+    &:focus {
+        outline: 0;
+        box-shadow: none;
+    }
+}
+
+a {
+    display: inline-block;
+    &:hover {
+        text-decoration: none;
+    }
+    &:focus {
+        outline: 0;
+    }
+}

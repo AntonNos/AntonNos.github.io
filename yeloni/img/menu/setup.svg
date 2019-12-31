@@ -1,0 +1,22 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
+    <defs>
+        <style>
+            .cls-1,.cls-2{fill:none}.cls-2{stroke:#393f4d;stroke-miterlimit:10;stroke-width:1.5px}
+        </style>
+    </defs>
+    <g id="Group_87" data-name="Group 87" transform="translate(-47 -338)">
+        <path id="Rectangle_184" d="M0 0h24v24H0z" class="cls-1" data-name="Rectangle 184" transform="translate(47 338)"/>
+        <g id="Group_86" data-name="Group 86" transform="translate(51.214 342.215)">
+            <g id="Group_83" data-name="Group 83" transform="translate(5.269 5.269)">
+                <g id="Group_82" data-name="Group 82">
+                    <path id="Path_32" d="M155.949 154.1a2.516 2.516 0 1 0-3.043 1.845 2.519 2.519 0 0 0 3.043-1.845z" class="cls-2" data-name="Path 32" transform="translate(-150.988 -150.988)"/>
+                </g>
+            </g>
+            <g id="Group_85" data-name="Group 85" transform="translate(-.214 -.215)">
+                <g id="Group_84" data-name="Group 84">
+                    <path id="Path_33" d="M7.319 15.534l.874-1.672a6.045 6.045 0 0 0 1.079-.171l1.179 1.168a.468.468 0 0 0 .572.068l1.6-.971a.468.468 0 0 0 .2-.539c0-.013-.331-1.071-.49-1.587a6.057 6.057 0 0 0 .646-.872h1.887a.468.468 0 0 0 .454-.357l.446-1.82a.468.468 0 0 0-.238-.527l-1.672-.874a6.051 6.051 0 0 0-.186-1.139l.637-.643.576-.581a.468.468 0 0 0 .068-.572l-.971-1.6a.468.468 0 0 0-.539-.2l-1.7.524a6.06 6.06 0 0 0-.789-.573V.709A.468.468 0 0 0 10.6.245L8.779-.2a.468.468 0 0 0-.527.238L7.378 1.71a6.011 6.011 0 0 0-1.1.175L5.152.765A.468.468 0 0 0 4.579.7l-1.6.971a.468.468 0 0 0-.2.539c0 .013.317 1.025.47 1.522a6.056 6.056 0 0 0-.657.885H.7a.468.468 0 0 0-.455.357L-.2 6.792a.468.468 0 0 0 .238.527l1.672.874a5.963 5.963 0 0 0 .18 1.113l-1.139 1.15a.468.468 0 0 0-.068.572l.971 1.6a.468.468 0 0 0 .539.2l1.563-.484a6.023 6.023 0 0 0 .858.633v1.887a.468.468 0 0 0 .357.455l1.82.446a.468.468 0 0 0 .528-.231z" class="cls-2" data-name="Path 33" transform="translate(.214 .215)"/>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

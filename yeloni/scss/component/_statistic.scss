@@ -1,0 +1,58 @@
+.y-stat {
+    $y: &;
+    display: flex;
+    margin-bottom: 30px;
+    &__item {
+        background-color: $c_white;
+        border: 1px solid $c_border;
+        border-radius: 4px;
+        padding: 30px;
+        width: calc(100% / 3);
+        &:not(:last-child) {
+            margin-right: 30px;
+        }
+        &.regress {
+            #{$y}__info-percent {
+                background-color: #ff3d57;
+            }
+            #{$y}__info-arrow {
+                transform: scale(1, -1);
+            }
+        }
+    }
+    &__title {
+        font-size: 26px;
+        font-weight: 600;
+        line-height: 1.23;
+        margin-bottom: 37px;
+    }
+    &__text {
+        font-size: 16px;
+        line-height: 1.19;
+        margin-bottom: 16px;
+    }
+    &__info {
+        display: flex;
+        align-items: center;
+    }
+    &__info-number {
+        font-size: 36px;
+        line-height: 1.22;
+        margin-right: 8px;
+    }
+    &__info-arrow {
+        width: 30px;
+        margin-right: 13px;
+    }
+    &__info-percent {
+        font-size: 20px;
+        line-height: 1.2;
+        color: $c_white;
+        padding: 2px 7px;
+        background-color: $c_primary;
+        border-radius: 14px;
+        &::before {
+            content: attr(data-percent);
+        }
+    }
+}

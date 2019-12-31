@@ -1,0 +1,11 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="24.567" height="27.104" viewBox="0 0 24.567 27.104">
+    <defs>
+        <style>
+            .cls-1{fill:none;stroke:#393f4d;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:10;stroke-width:2px}
+        </style>
+    </defs>
+    <g id="Component_62_13" data-name="Component 62 – 13" transform="translate(1 1)">
+        <path id="Path_24" d="M206.4 539.213h-.722v-7.142a8.209 8.209 0 0 0-6.563-8.042 1.742 1.742 0 1 0-3.471-.214 1.707 1.707 0 0 0 .026.254 8.205 8.205 0 0 0-6.4 8v7.142h-.722a2.355 2.355 0 0 0 0 4.711H206.4a2.355 2.355 0 1 0 0-4.711z" class="cls-1" data-name="Path 24" transform="translate(-186.192 -522.069)"/>
+        <path id="Rectangle_173" d="M0 0h4.173v1.162a2.086 2.086 0 0 1-2.087 2.086A2.086 2.086 0 0 1 0 1.162V0z" class="cls-1" data-name="Rectangle 173" transform="translate(9.197 21.855)"/>
+    </g>
+</svg>
