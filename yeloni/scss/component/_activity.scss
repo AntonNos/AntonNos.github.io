@@ -1,0 +1,173 @@
+.y-activity {
+    flex: 1;
+    background-color: $c_white;
+    padding: 30px;
+    &__top {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+    &__title {
+        font-size: 26px;
+        font-weight: 600;
+        line-height: 1.23;
+    }
+    &__selects {
+        display: flex;
+    }
+    &__calendar {
+        position: relative;
+        margin-right: 30px;
+        .float-right {
+            float: right;
+        }
+        dropdown ul li {
+            display: block;
+            width: px;
+            background: #191919;
+            opacity: 0.9;
+            padding: 15px 20px;
+        }
+        dropdown ul li:hover {
+            background: #4D4D4D;
+            color: white;
+            cursor: pointer;
+        }
+        dropdown label {
+            position: relative;
+            display: flex;
+            align-items: center;
+            font-size: 16px;
+            line-height: 1.19;
+            padding: 7px 10px 7px 14px;
+            border: 1px solid $c_border;
+            border-radius: 2px;
+            &::after {
+                display: none;
+            }
+            span {
+                margin-right: 42px;
+            }
+            z-index: 2;
+        }
+        dropdown input {
+            display: none;
+        }
+        dropdown input~ul {
+            position: absolute;
+            visibility: hidden;
+            opacity: 0;
+            top: 52px;
+            z-index: 1;
+        }
+        dropdown input:checked+label {
+            background: #4D4D4D;
+            color: white;
+        }
+        dropdown input:checked~ul {
+            visibility: visible;
+            opacity: 1;
+            top: 52px;
+        }
+        $colors: #FFFFFF,
+        #0072B5,
+        #2C3E50;
+        @for $i from 1 through length($colors) {
+            dropdown ul li:nth-child(#{$i}) {
+                border-left: 4px solid nth($colors, $i);
+                .fa {
+                    color: nth($colors, $i);
+                }
+                &:hover {
+                    background: nth($colors, $i);
+                    color: white;
+                    .fa {
+                        color: white;
+                    }
+                }
+            }
+        }
+        .animate {
+            -webkit-transition: all .3s;
+            -moz-transition: all .3s;
+            -ms-transition: all .3s;
+            -ms-transition: all .3s;
+            transition: all .3s;
+            backface-visibility: hidden;
+            -webkit-backface-visibility: hidden;
+            /* Chrome and Safari */
+            -moz-backface-visibility: hidden;
+            /* Firefox */
+            -ms-backface-visibility: hidden;
+            /* Internet Explorer */
+        }
+        /*calendar*/
+        .left {
+            float: left;
+        }
+        .right {
+            float: right;
+        }
+        .monthname {
+            width: 18em;
+        }
+        .pointer {
+            cursor: pointer;
+        }
+        .group:after {
+            content: "";
+            display: table;
+            clear: both;
+        }
+        .calendar p {
+            margin-bottom: .5em;
+            color: #FFFFFF;
+        }
+        .calendar {
+            background: #222;
+            color: #ddd;
+            padding: .5em .5em 1em;
+            max-width: 20em;
+            min-height: 15em;
+            margin: .5em auto;
+            -webkit-border-radius: 5px;
+            border-radius: 5px;
+        }
+        .calendar li {
+            float: left;
+            width: -webkit-calc(100%/7);
+            text-align: center;
+            padding: .25em 0;
+            cursor: pointer;
+            border-bottom: 1px solid #444;
+        }
+        .calendar li:hover,
+        .calendar li.red {
+            color: red;
+        }
+        .calendar li:nth-child(-n+7) {
+            color: #666;
+        }
+        .center {
+            text-align: center;
+        }
+    }
+    &__type {
+        button {
+            position: relative;
+            display: flex;
+            align-items: center;
+            font-size: 16px;
+            line-height: 1.19;
+            padding: 7px 10px 7px 14px;
+            border: 1px solid $c_border;
+            border-radius: 2px;
+            &::after {
+                display: none;
+            }
+            span {
+                margin-right: 42px;
+            }
+        }
+    }
+}

@@ -83,7 +83,7 @@
                     </li>
                 </ul>
             </div>
-            <div class="y-content">
+            <div class="y-content d-flex flex-column">
                 <div class="y-stat">
                     <div class="y-stat__item">
                         <div class="y-stat__title">Today</div>
@@ -119,6 +119,58 @@
                         </div>
                     </div>
                 </div>
+                <div class="y-activity">
+                    <div class="y-activity__top">
+                        <div class="y-activity__title">Activity</div>
+                        <div class="y-activity__selects">
+                            <div class="y-activity__calendar">
+                                <dropdown>
+                                    <input id="toggle1" type="checkbox">
+                                    <label for="toggle1" class="animate">
+                                        <span>Select Dates</span>
+                                        <img src="./img/arrow.svg" alt="arrow">
+                                    </label>
+                                    <ul class="animate">
+
+                                        <!-- calendar  -->
+                                        <h1 class="center"></h1>
+                                        <div class="calendar">
+                                            <div class="group">
+                                                <p class="left pointer minusmonth">&laquo;</p>
+                                                <p class="left monthname center pointer"></p>
+                                                <p class="right pointer addmonth">&raquo;</p>
+                                            </div>
+                                            <ul class="group">
+                                                <li>Mo</li>
+                                                <li>Tu</li>
+                                                <li>We</li>
+                                                <li>Th</li>
+                                                <li>Fr</li>
+                                                <li>Sa</li>
+                                                <li>Su</li>
+                                            </ul>
+                                        </div>
+
+                                    </ul>
+                                </dropdown>
+                            </div>
+                            <div class="y-activity__type">
+                                <div class="dropdown">
+                                    <button class="dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                        <span>Weekly</span>
+                                        <img src="./img/arrow.svg" alt="arrow">
+                                    </button>
+                                    <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                                        <a class="dropdown-item" href="#">Today</a>
+                                        <a class="dropdown-item" href="#">Weekly</a>
+                                        <a class="dropdown-item" href="#">Monthly</a>
+                                        <a class="dropdown-item" href="#">Yearly</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
             </div>
         </div>
     </div>
@@ -126,6 +178,8 @@
     <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+
+    <script src="./js/script.js"></script>
 </body>
 
 </html>
