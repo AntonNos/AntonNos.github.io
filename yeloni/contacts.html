@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Contacts</title>
+
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:500,600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./css/reset.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <link rel="stylesheet" href="./css/style.min.css">
+</head>
+
+<body>
+    <div class="y-wrapper">
+        <div class="y-header">
+            <div class="y-header__logo">
+                <img src="./img/logo.png" alt="logo">
+            </div>
+            <div class="y-header__info">
+                <div class="y-header__alert">
+                    <button type="button" class="y-header__alert-btn" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" data-amount="2">
+                        <img src="./img/alert.svg" alt="alert">
+                    </button>
+                    <ul class="dropdown-menu y-header__alert-list">
+                        <li class="y-header__alert-item">
+                            <a href="#" class="y-header__alert-link">
+                                <div class="y-header__alert-text">Sed ut perspiciatis unde omnis iste natu</div>
+                                <div class="y-header__alert-time">3 min ago</div>
+                            </a>
+                        </li>
+                        <li class="y-header__alert-item">
+                            <a href="#" class="y-header__alert-link">
+                                <div class="y-header__alert-text">Sed ut perspiciatis unde omnis iste natu</div>
+                                <div class="y-header__alert-time">3 min ago</div>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="y-header__name" data-user="Bruce">Hi,</div>
+                <div class="y-header__user">
+                    <img src="./img/user.png" alt="user">
+                </div>
+                <a href="#" class="y-header__arrow">
+                    <img src="./img/arrow.svg" alt="arrow">
+                </a>
+            </div>
+        </div>
+        <div class="y-main">
+            <div class="y-nav">
+                <ul class="y-nav__list">
+                    <li class="y-nav__item">
+                        <a href="/dashboard.html" class="y-nav__item-link">
+                            <img src="./img/menu/dashboard.svg" class="y-nav__item-icon" alt="Dashboard">
+                            <span>Dashboard</span>
+                        </a>
+                    </li>
+                    <li class="y-nav__item">
+                        <a href="/widgets.html" class="y-nav__item-link">
+                            <img src="./img/menu/widgets.svg" class="y-nav__item-icon" alt="Widgets">
+                            <span>Widgets</span>
+                        </a>
+                    </li>
+                    <li class="y-nav__item">
+                        <a href="/integration.html" class="y-nav__item-link">
+                            <img src="./img/menu/integration.svg" class="y-nav__item-icon" alt="Integration">
+                            <span>Integration</span>
+                        </a>
+                    </li>
+                    <li class="y-nav__item active">
+                        <a href="/contacts.html" class="y-nav__item-link">
+                            <img src="./img/menu/contacts.svg" class="y-nav__item-icon" alt="Contacts">
+                            <span>Contacts</span>
+                        </a>
+                    </li>
+                    <li class="y-nav__item">
+                        <a href="#" class="y-nav__item-link">
+                            <img src="./img/menu/setup.svg" class="y-nav__item-icon" alt="Setup">
+                            <span>Setup</span>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+            <div class="y-content d-flex flex-column">
+                <div class="d-flex justify-content-between align-items-start">
+                    <div class="y-heading">
+                        <div class="y-heading__title">Contacts</div>
+                        <div class="y-heading__text">Sed ut perspiciatis unde omnis iste natus error sit</div>
+                    </div>
+                </div>
+                <div class="y-table">
+                    <table class="table y-table__table">
+                        <thead class="y-table__table-head">
+                          <tr>
+                            <th scope="col">Name</th>
+                            <th scope="col">Email ID</th>
+                            <th scope="col">Custom Data</th>
+                            <th scope="col">Source Widget</th>
+                            <th scope="col">Sync With</th>
+                          </tr>
+                        </thead>
+                        <tbody class="y-table__table-body">
+                            <tr>
+                                <th scope="row">Bruce Wayne</th>
+                                <td>brucewayne@domain.com</td>
+                                <td class="has-amount" data-amount="3+">Sed Ut Perspiciatis Unde</td>
+                                <td>Houston Contact Form</td>
+                                <td>Mailchimp</td>
+                            </tr>
+                            <tr>
+                                <th scope="row">Bruce Wayne</th>
+                                <td>brucewayne@domain.com</td>
+                                <td class="has-amount" data-amount="3+">Sed Ut Perspiciatis Unde</td class="has-amount" data-amount="3">
+                                <td>Houston Contact Form</td>
+                                <td>Mailchimp</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+
+    <script src="./js/script.js"></script>
+</body>
+
+</html>
