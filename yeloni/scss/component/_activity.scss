@@ -24,12 +24,12 @@
         dropdown ul li {
             display: block;
             width: px;
-            background: #191919;
+            // background: #191919;
             opacity: 0.9;
             padding: 15px 20px;
         }
         dropdown ul li:hover {
-            background: #4D4D4D;
+            // background: #4D4D4D;
             color: white;
             cursor: pointer;
         }
@@ -59,10 +59,6 @@
             opacity: 0;
             top: 52px;
             z-index: 1;
-        }
-        dropdown input:checked+label {
-            background: #4D4D4D;
-            color: white;
         }
         dropdown input:checked~ul {
             visibility: visible;
@@ -124,7 +120,7 @@
             color: #FFFFFF;
         }
         .calendar {
-            background: #222;
+            // background: #222;
             color: #ddd;
             padding: .5em .5em 1em;
             max-width: 20em;
@@ -168,6 +164,10 @@
             span {
                 margin-right: 42px;
             }
+        }
+        .dropdown-menu {
+            min-width: 0;
+            right: 0 !important;
         }
     }
 }
