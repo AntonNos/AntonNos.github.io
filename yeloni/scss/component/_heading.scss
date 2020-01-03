@@ -1,4 +1,11 @@
 .y-heading {
+    $h: &;
+    &--small {
+        margin-top: 25px;
+        #{$h}__title {
+            font-size: 20px;
+        }
+    }
     &__title {
         font-size: 36px;
         line-height: 1.22;

@@ -21,6 +21,32 @@
         align-items: center;
         justify-content: flex-end;
         padding: 17px 30px;
+        &--mod-template {
+            justify-content: space-between;
+        }
+    }
+    &__back {
+        img {
+            transform: rotate(90deg);
+        }
+    }
+    &__group {
+        display: flex;
+        align-items: center;
+    }
+    &__cancel {
+        color: $c_text;
+        margin-right: 20px;
+        &:hover {
+            color: $c_text;
+        }
+    }
+    &__save {
+        margin-right: 20px;
+    }
+    &__install {
+        text-align: center;
+        min-width: 145px;
     }
     &__alert {
         position: relative;
