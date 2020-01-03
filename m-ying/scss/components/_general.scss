@@ -28,3 +28,10 @@ button {
 textarea {
     min-height: 80px;
 }
+
+a {
+    &:hover,
+    &:focus {
+        outline: 0;
+    }
+}
