@@ -94,6 +94,11 @@ function setImgToBackground(img_selector, parent_selector) {
     });
 }
 
+$('.article-title').on('click', function () {
+    $(this).next().slideToggle(200);
+    $(this).toggleClass('open');
+});
+    
 $(window).on('load', function () {
     setImgToBackground('.bg-image-js');
 })

@@ -18,19 +18,21 @@
     &__calendar {
         position: relative;
         margin-right: 30px;
+        ul {
+            font-size: 12px;
+            margin-bottom: 0;
+            box-shadow: 0px 0px 20px 0px rgba(0,0,0,0.28);
+        }
         .float-right {
             float: right;
         }
         dropdown ul li {
             display: block;
-            width: px;
-            // background: #191919;
             opacity: 0.9;
             padding: 15px 20px;
         }
         dropdown ul li:hover {
-            // background: #4D4D4D;
-            color: white;
+            color: $c_text;
             cursor: pointer;
         }
         dropdown label {
@@ -65,24 +67,6 @@
             opacity: 1;
             top: 52px;
         }
-        $colors: #FFFFFF,
-        #0072B5,
-        #2C3E50;
-        @for $i from 1 through length($colors) {
-            dropdown ul li:nth-child(#{$i}) {
-                border-left: 4px solid nth($colors, $i);
-                .fa {
-                    color: nth($colors, $i);
-                }
-                &:hover {
-                    background: nth($colors, $i);
-                    color: white;
-                    .fa {
-                        color: white;
-                    }
-                }
-            }
-        }
         .animate {
             -webkit-transition: all .3s;
             -moz-transition: all .3s;
@@ -98,36 +82,27 @@
             /* Internet Explorer */
         }
         /*calendar*/
-        .left {
-            float: left;
-        }
-        .right {
-            float: right;
-        }
-        .monthname {
-            width: 18em;
-        }
         .pointer {
             cursor: pointer;
         }
-        .group:after {
-            content: "";
-            display: table;
-            clear: both;
-        }
         .calendar p {
             margin-bottom: .5em;
-            color: #FFFFFF;
+            color: $c_text;
         }
         .calendar {
-            // background: #222;
-            color: #ddd;
+            color: $c_text;
             padding: .5em .5em 1em;
             max-width: 20em;
             min-height: 15em;
             margin: .5em auto;
             -webkit-border-radius: 5px;
             border-radius: 5px;
+            .red {
+                &:first-child {
+                    border-top-left-radius: 50%;
+                    border-bottom-left-radius: 50%;
+                }
+            }
         }
         .calendar li {
             float: left;
@@ -135,11 +110,13 @@
             text-align: center;
             padding: .25em 0;
             cursor: pointer;
-            border-bottom: 1px solid #444;
+            border-right: 1px solid $c_white;
+            border-bottom: 1px solid $c_white;
         }
         .calendar li:hover,
         .calendar li.red {
-            color: red;
+            background-color: $c_primary;
+            color: $c_white;
         }
         .calendar li:nth-child(-n+7) {
             color: #666;
@@ -158,6 +135,7 @@
             padding: 7px 10px 7px 14px;
             border: 1px solid $c_border;
             border-radius: 2px;
+            background-color: transparent;
             &::after {
                 display: none;
             }
@@ -166,8 +144,13 @@
             }
         }
         .dropdown-menu {
+            border: 0;
+            box-shadow: 0px 0px 20px 0px rgba(0,0,0,0.28);
             min-width: 0;
             right: 0 !important;
         }
+    }
+    &__bottom {
+        margin-top: 50px;
     }
 }
