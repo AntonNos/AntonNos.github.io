@@ -5,9 +5,15 @@
     margin: 60px auto 30px;
     border: 1px solid $c_border;
     border-radius: 4px;
+    @media (max-width: 1500px) {
+        margin-top: 30px;
+    }
     &__list {
         width: 40%;
         margin: 0;
+        @media (max-width: 1500px) {
+            width: 50%;
+        }
     }
     &__item {
         background-color: $c_white;
@@ -46,6 +52,9 @@
                 transform: rotate(45deg) translateY(-50%);
             }
         }
+        @media (max-width: 1500px) {
+            padding: 10px 40px 10px 20px;
+        }
     }
     &__logo {
         flex-basis: 55px;
@@ -55,6 +64,9 @@
     }
     &__info-title {
         margin-bottom: 8px;
+        @media (max-width: 1500px) {
+            margin-bottom: 5px;
+        }
     }
     &__info-text {
         font-size: 14px;
@@ -64,6 +76,10 @@
         width: 60%;
         padding: 50px;
         background-color: $c_white;
+        @media (max-width: 1500px) {
+            width: 50%;
+            padding: 20px;
+        }
     }
     &__content {
         font-size: 14px;

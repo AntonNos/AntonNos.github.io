@@ -16,6 +16,7 @@
 .y-main {
     display: flex;
     height: 100%;
+    overflow: auto;
 }
 
 img,
@@ -41,6 +42,10 @@ a {
     &:focus {
         outline: 0;
     }
+}
+
+p {
+    word-break: break-word;
 }
 
 .bg-image-block-js {

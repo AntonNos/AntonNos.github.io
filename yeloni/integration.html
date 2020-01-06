@@ -89,8 +89,9 @@
                         <div class="y-heading__title">Widgets</div>
                         <div class="y-heading__text">Sed ut perspiciatis unde omnis iste natus error sit</div>
                     </div>
-                    <a href="#" class="y-button y-button--primary">Create widget</a>
+                    <button type="button" data-toggle="modal" data-target="#addIntegration" class="y-button y-button--primary">Create widget</a>
                 </div>
+                
                 <div class="y-integration">
                     <div class="y-integration__item">
                         <div class="y-integration__top">
@@ -227,14 +228,42 @@
         </div>
     </div>
 
-    <script
-  src="https://code.jquery.com/jquery-3.4.1.min.js"
-  integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo="
-  crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+    <!-- Modal -->
+        <div class="modal fade" id="addIntegration" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+            <div class="modal-dialog modal-dialog-centered y-modal" role="document">
+                <div class="modal-content y-modal__item">
+                    <button class="y-modal__close" type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <img src="./img/close.svg" alt="close">
+                    </button>
+                    <div class="y-modal__title">Add New Integration</div>
+                    <div class="y-modal__text">Sed ut perspiciatis unde omnis iste natus error sit</div>
+                    <form action="" class="y-modal__form">
+                        <div class="y-modal__dropdown">
+                            <button class="dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                <span>Select Type Of Integration</span>
+                                <img src="./img/arrow.svg" alt="arrow">
+                            </button>
+                            <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                                <a class="dropdown-item" href="#">Mail Chimp</a>
+                                <a class="dropdown-item" href="#">Send in Blue</a>
+                                <a class="dropdown-item" href="#">Active Campaing</a>
+                                <a class="dropdown-item" href="#">iContact</a>
+                                <a class="dropdown-item" href="#">Constant Contact</a>
+                                <a class="dropdown-item" href="#">Lead Squared</a>
+                            </div>
+                        </div>
+                        <textarea name="api" id="api" placeholder="Paste Your API Key"></textarea>
+                        <button type="submit" class="y-button y-button--primary">Integrate Now</button>
+                    </form>
+                </div>
+            </div>
+        </div>
 
-    <script src="./js/script.js"></script>
+        <script src="https://code.jquery.com/jquery-3.4.1.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+        <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+
+        <script src="./js/script.js"></script>
 </body>
 
 </html>
