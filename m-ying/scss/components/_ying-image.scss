@@ -14,11 +14,10 @@
             clip-path: polygon(0% 0%, 100% 0%, 0% 100%, 0% 100%);
             z-index: -1;
         }
-        &::after {
+        span {
             position: absolute;
             right: -15px;
             bottom: 60px;
-            content: "Leadership";
             display: block;
             color: #ffffff;
             background-color: #2C3051;
