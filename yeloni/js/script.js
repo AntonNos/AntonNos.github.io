@@ -98,7 +98,14 @@ $('.article-title').on('click', function () {
     $(this).next().slideToggle(200);
     $(this).toggleClass('open');
 });
+
+function mobileMenu() {
+    $("#y-nav-close-js").on('click', function() {
+        $(".y-nav").toggleClass('opened')
+    });
+}
     
 $(window).on('load', function () {
     setImgToBackground('.bg-image-js');
+    mobileMenu();
 })

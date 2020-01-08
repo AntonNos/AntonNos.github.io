@@ -5,6 +5,43 @@
     flex-grow: 0;
     padding: 35px 0 35px 22px;
     border-right: 1px solid $c_border;
+    transition: 0.2s all;
+    @media (max-width: 991px) {
+        position: absolute;
+        background-color: $c_white;
+        height: 100%;
+        z-index: 9;
+        transform: translateX(-100%);
+        &.opened {
+            transform: none;
+            .y-nav__close {
+                img {
+                    transform: rotate(90deg);
+                }
+            }
+        }
+    }
+    &__close {
+        display: none;
+        img {
+            transform: rotate(-90deg);
+            transition: 0.2s all;
+        }
+        @media (max-width: 991px) {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            position: absolute;
+            top: 0;
+            right: -30px;
+            width: 30px;
+            height: 30px;
+            background-color: $c_white;
+            border: 1px solid $c_border;
+            border-top-right-radius: 4px;
+            border-bottom-right-radius: 4px;
+        }
+    }
     &__item {
         position: relative;
         font-size: 16px;

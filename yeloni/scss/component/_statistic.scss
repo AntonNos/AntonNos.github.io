@@ -2,14 +2,24 @@
     $y: &;
     display: flex;
     margin-bottom: 30px;
+    @media (max-width: 1199px) {
+        flex-direction: column;
+    }
     &__item {
         background-color: $c_white;
         border: 1px solid $c_border;
         border-radius: 4px;
         padding: 30px;
         width: calc(100% / 3);
+        @media (max-width: 1199px) {
+            width: 100%;
+        }
         &:not(:last-child) {
             margin-right: 30px;
+            @media (max-width: 1199px) {
+                margin-right: 0;
+                margin-bottom: 30px;
+            }
         }
         &.regress {
             #{$y}__info-percent {
