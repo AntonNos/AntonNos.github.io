@@ -49,10 +49,14 @@
     }
     &__save {
         margin-right: 20px;
+        width: 42px;
     }
     &__install {
         text-align: center;
         min-width: 145px;
+        @media (max-width: 767px) {
+            min-width: auto;
+        }
     }
     &__alert {
         position: relative;

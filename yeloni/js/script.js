@@ -79,7 +79,7 @@ function setImgToBackground(img_selector, parent_selector) {
         return false;
     }
     var $parent, $imgDataHidden, _this;
-    $(img_selector).each(function () {
+    $(img_selector).each(function() {
         _this = $(this);
         $imgDataHidden = _this.data('hidden-js');
         $parent = _this.closest(parent_selector);
@@ -94,18 +94,21 @@ function setImgToBackground(img_selector, parent_selector) {
     });
 }
 
-$('.article-title').on('click', function () {
+$('.article-title').on('click', function() {
     $(this).next().slideToggle(200);
     $(this).toggleClass('open');
 });
 
-function mobileMenu() {
+function asideMenus() {
     $("#y-nav-close-js").on('click', function() {
         $(".y-nav").toggleClass('opened')
     });
+    $("#y-customize-close-js").on('click', function() {
+        $(".y-customize").toggleClass('opened')
+    });
 }
-    
-$(window).on('load', function () {
+
+$(window).on('load', function() {
     setImgToBackground('.bg-image-js');
-    mobileMenu();
+    asideMenus();
 })

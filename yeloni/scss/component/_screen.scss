@@ -53,6 +53,9 @@
             height: 8px;
             background-color: #e8562b;
         }
+        @media (max-width: 767px) {
+            padding: 30px;
+        }
     }
     &__modal-close {
         position: absolute;
@@ -74,19 +77,20 @@
         border: solid 1px $c_border;
         width: 100%;
         margin-bottom: 20px;
-        &::placeholder { /* Chrome, Firefox, Opera, Safari 10.1+ */
+        &::placeholder {
+            /* Chrome, Firefox, Opera, Safari 10.1+ */
             font-size: 14px;
             line-height: normal;
             opacity: 0.4;
         }
-            
-        &:-ms-input-placeholder { /* Internet Explorer 10-11 */
+        &:-ms-input-placeholder {
+            /* Internet Explorer 10-11 */
             font-size: 14px;
             line-height: normal;
             opacity: 0.4;
         }
-            
-        &::-ms-input-placeholder { /* Microsoft Edge */
+        &::-ms-input-placeholder {
+            /* Microsoft Edge */
             font-size: 14px;
             line-height: normal;
             opacity: 0.4;

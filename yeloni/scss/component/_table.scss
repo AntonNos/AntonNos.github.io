@@ -6,6 +6,10 @@
     margin-top: 30px;
     overflow-x: auto;
     &__table {
+        @media (max-width: 767px) {
+            min-width: 700px;
+            font-size: 14px;
+        }
         td,
         th {
             border-top: 0;

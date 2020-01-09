@@ -116,227 +116,235 @@
                 </a>
             </div>
             <div class="y-customize">
-                <div id="accordion" class="accordion-container y-accordion">
+                <span id="y-customize-close-js" class="y-customize__close">
+                    <img src="./img/arrow.svg" alt="arrow">
+                </span>
+                <div class="y-customize__inner">
+                    <div id="accordion" class="accordion-container y-accordion">
 
-                    <div class="y-accordion__item">
-                        <div class="article-title y-accordion__title">Text Fields</div>
-                        <div class="accordion-content y-accordion__content">
-                            <div class="y-accordion__inputs">
-                                <div class="y-accordion__input-group" data-symbol="&#10003;">
-                                    <input type="email" name="Email" placeholder="Email" id="Email">
-                                </div>
-                                <div class="y-accordion__input-group" data-symbol="+">
-                                    <input type="tel" name="Tel" placeholder="Phone Number" id="Tel">
-                                </div>
-                                <button class="y-accordion__input-add">Add Field</button>
-                                <div class="y-accordion__group">
-                                    <div class="y-accordion__group-text">All Fields Required</div>
-                                    <div class="y-accordion__group-switcher">
-                                        <input type='checkbox' class='ios8-switch' id='checkbox-1'>
-                                        <label for='checkbox-1'></label>
+                        <div class="y-accordion__item">
+                            <div class="article-title y-accordion__title">Text Fields</div>
+                            <div class="accordion-content y-accordion__content">
+                                <div class="y-accordion__inputs">
+                                    <div class="y-accordion__input-group" data-symbol="&#10003;">
+                                        <input type="email" name="Email" placeholder="Email" id="Email">
+                                    </div>
+                                    <div class="y-accordion__input-group" data-symbol="+">
+                                        <input type="tel" name="Tel" placeholder="Phone Number" id="Tel">
+                                    </div>
+                                    <button class="y-accordion__input-add">Add Field</button>
+                                    <div class="y-accordion__group">
+                                        <div class="y-accordion__group-text">All Fields Required</div>
+                                        <div class="y-accordion__group-switcher">
+                                            <input type='checkbox' class='ios8-switch' id='checkbox-1'>
+                                            <label for='checkbox-1'></label>
+                                        </div>
                                     </div>
                                 </div>
                             </div>
-                        </div><!--/.accordion-content-->
-                    </div>
+                            <!--/.accordion-content-->
+                        </div>
 
-                    <div class="y-accordion__item">
-                        <div class="article-title y-accordion__title">Alert Styling</div>
-                        <div class="accordion-content y-accordion__content">
-                            <div class="y-accordion__group">
-                                <div class="y-accordion__group-text">Color</div>
-                                <div class="y-accordion__group-color">
-                                    <span class="color"></span>
-                                    <input type="text" name="color" id="color" placeholder="#000000">
+                        <div class="y-accordion__item">
+                            <div class="article-title y-accordion__title">Alert Styling</div>
+                            <div class="accordion-content y-accordion__content">
+                                <div class="y-accordion__group">
+                                    <div class="y-accordion__group-text">Color</div>
+                                    <div class="y-accordion__group-color">
+                                        <span class="color"></span>
+                                        <input type="text" name="color" id="color" placeholder="#000000">
+                                    </div>
+                                </div>
+                                <div class="y-accordion__group">
+                                    <div class="y-accordion__group-text">Defaul Text Color</div>
+                                    <div class="y-accordion__group-color">
+                                        <span class="color"></span>
+                                        <input type="text" name="color" id="color" placeholder="#000000">
+                                    </div>
+                                </div>
+                                <div class="y-accordion__group">
+                                    <div class="y-accordion__group-text">Trigger Color</div>
+                                    <div class="y-accordion__group-color">
+                                        <span class="color"></span>
+                                        <input type="text" name="color" id="color" placeholder="#000000">
+                                    </div>
+                                </div>
+                                <div class="y-accordion__group">
+                                    <div class="y-accordion__group-text">Placement</div>
+                                    <div class="y-accordion__group-dropdown">
+                                        <a data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" data-amount="2">
+                                            <span>Center</span>
+                                            <img src="./img/arrow.svg" alt="arrow">
+                                        </a>
+                                        <ul class="dropdown-menu">
+                                            <li>
+                                                <a href="#">Right</a>
+                                            </li>
+                                            <li>
+                                                <a href="#">Left</a>
+                                            </li>
+                                            <li>
+                                                <a href="#">Top</a>
+                                            </li>
+                                            <li>
+                                                <a href="#">Bottom</a>
+                                            </li>
+                                        </ul>
+                                    </div>
                                 </div>
                             </div>
-                            <div class="y-accordion__group">
-                                <div class="y-accordion__group-text">Defaul Text Color</div>
-                                <div class="y-accordion__group-color">
-                                    <span class="color"></span>
-                                    <input type="text" name="color" id="color" placeholder="#000000">
-                                </div>
-                            </div>
-                            <div class="y-accordion__group">
-                                <div class="y-accordion__group-text">Trigger Color</div>
-                                <div class="y-accordion__group-color">
-                                    <span class="color"></span>
-                                    <input type="text" name="color" id="color" placeholder="#000000">
-                                </div>
-                            </div>
-                            <div class="y-accordion__group">
-                                <div class="y-accordion__group-text">Placement</div>
-                                <div class="y-accordion__group-dropdown">
-                                    <a data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" data-amount="2">
-                                        <span>Center</span>
-                                        <img src="./img/arrow.svg" alt="arrow">
-                                    </a>
-                                    <ul class="dropdown-menu">
-                                        <li>
-                                            <a href="#">Right</a>
-                                        </li>
-                                        <li>
-                                            <a href="#">Left</a>
-                                        </li>
-                                        <li>
-                                            <a href="#">Top</a>
-                                        </li>
-                                        <li>
-                                            <a href="#">Bottom</a>
-                                        </li>
-                                    </ul>
-                                </div>
-                            </div>
-                        </div><!--/.accordion-content-->
-                    </div>
-                  
-                    <div class="y-accordion__item">
-                        <div class="article-title y-accordion__title">Button Styling</div>
-                        <div class="accordion-content y-accordion__content">
-                            <div class="y-accordion__group">
-                                <div class="y-accordion__group-text">Color</div>
-                                <div class="y-accordion__group-color">
-                                    <span class="color"></span>
-                                    <input type="text" name="color" id="color" placeholder="#000000">
-                                </div>
-                            </div>
-                            <div class="y-accordion__group">
-                                <div class="y-accordion__group-text">Rounded Corners</div>
-                                <div class="y-accordion__group-input">
-                                    <input type="text" name="border" id="border" placeholder="2px">
-                                </div>
-                            </div>
-                            <div class="y-accordion__group">
-                                <div class="y-accordion__group-text">Border Color</div>
-                                <div class="y-accordion__group-color">
-                                    <span class="color"></span>
-                                    <input type="text" name="color" id="color" placeholder="#000000">
-                                </div>
-                            </div>
-                            <div class="y-accordion__group">
-                                <div class="y-accordion__group-text">Border Width</div>
-                                <div class="y-accordion__group-input">
-                                    <input type="text" name="border" id="border" placeholder="1px">
-                                </div>
-                            </div>
-                            <div class="y-accordion__group">
-                                <div class="y-accordion__group-text">Height</div>
-                                <div class="y-accordion__group-input">
-                                    <input type="text" name="border" id="border" placeholder="30px">
-                                </div>
-                            </div>
-                        </div><!--/.accordion-content-->
-                    </div>
+                            <!--/.accordion-content-->
+                        </div>
 
-                    <div class="y-accordion__item">
-                        <div class="article-title y-accordion__title">Text Field Styling</div>
-                        <div class="accordion-content y-accordion__content">
-                            <div class="y-accordion__group">
-                                <div class="y-accordion__group-text">Color</div>
-                                <div class="y-accordion__group-color">
-                                    <span class="color"></span>
-                                    <input type="text" name="color" id="color" placeholder="#000000">
+                        <div class="y-accordion__item">
+                            <div class="article-title y-accordion__title">Button Styling</div>
+                            <div class="accordion-content y-accordion__content">
+                                <div class="y-accordion__group">
+                                    <div class="y-accordion__group-text">Color</div>
+                                    <div class="y-accordion__group-color">
+                                        <span class="color"></span>
+                                        <input type="text" name="color" id="color" placeholder="#000000">
+                                    </div>
+                                </div>
+                                <div class="y-accordion__group">
+                                    <div class="y-accordion__group-text">Rounded Corners</div>
+                                    <div class="y-accordion__group-input">
+                                        <input type="text" name="border" id="border" placeholder="2px">
+                                    </div>
+                                </div>
+                                <div class="y-accordion__group">
+                                    <div class="y-accordion__group-text">Border Color</div>
+                                    <div class="y-accordion__group-color">
+                                        <span class="color"></span>
+                                        <input type="text" name="color" id="color" placeholder="#000000">
+                                    </div>
+                                </div>
+                                <div class="y-accordion__group">
+                                    <div class="y-accordion__group-text">Border Width</div>
+                                    <div class="y-accordion__group-input">
+                                        <input type="text" name="border" id="border" placeholder="1px">
+                                    </div>
+                                </div>
+                                <div class="y-accordion__group">
+                                    <div class="y-accordion__group-text">Height</div>
+                                    <div class="y-accordion__group-input">
+                                        <input type="text" name="border" id="border" placeholder="30px">
+                                    </div>
                                 </div>
                             </div>
-                            <div class="y-accordion__group">
-                                <div class="y-accordion__group-text">Defaul Text Color</div>
-                                <div class="y-accordion__group-color">
-                                    <span class="color"></span>
-                                    <input type="text" name="color" id="color" placeholder="#000000">
-                                </div>
-                            </div>
-                            <div class="y-accordion__group">
-                                <div class="y-accordion__group-text">Trigger Color</div>
-                                <div class="y-accordion__group-color">
-                                    <span class="color"></span>
-                                    <input type="text" name="color" id="color" placeholder="#000000">
-                                </div>
-                            </div>
-                            <div class="y-accordion__group">
-                                <div class="y-accordion__group-text">Placement</div>
-                                <div class="y-accordion__group-dropdown">
-                                    <a data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" data-amount="2">
-                                        <span>Center</span>
-                                        <img src="./img/arrow.svg" alt="arrow">
-                                    </a>
-                                    <ul class="dropdown-menu">
-                                        <li>
-                                            <a href="#">Right</a>
-                                        </li>
-                                        <li>
-                                            <a href="#">Left</a>
-                                        </li>
-                                        <li>
-                                            <a href="#">Top</a>
-                                        </li>
-                                        <li>
-                                            <a href="#">Bottom</a>
-                                        </li>
-                                    </ul>
-                                </div>
-                            </div>
-                        </div><!--/.accordion-content-->
-                    </div>
+                            <!--/.accordion-content-->
+                        </div>
 
-                    <div class="y-accordion__item">
-                        <div class="article-title y-accordion__title">Image</div>
-                        <div class="accordion-content y-accordion__content">
-                            <div class="y-accordion__group">
-                                <div class="y-accordion__group-text">Color</div>
-                                <div class="y-accordion__group-color">
-                                    <span class="color"></span>
-                                    <input type="text" name="color" id="color" placeholder="#000000">
+                        <div class="y-accordion__item">
+                            <div class="article-title y-accordion__title">Text Field Styling</div>
+                            <div class="accordion-content y-accordion__content">
+                                <div class="y-accordion__group">
+                                    <div class="y-accordion__group-text">Color</div>
+                                    <div class="y-accordion__group-color">
+                                        <span class="color"></span>
+                                        <input type="text" name="color" id="color" placeholder="#000000">
+                                    </div>
+                                </div>
+                                <div class="y-accordion__group">
+                                    <div class="y-accordion__group-text">Defaul Text Color</div>
+                                    <div class="y-accordion__group-color">
+                                        <span class="color"></span>
+                                        <input type="text" name="color" id="color" placeholder="#000000">
+                                    </div>
+                                </div>
+                                <div class="y-accordion__group">
+                                    <div class="y-accordion__group-text">Trigger Color</div>
+                                    <div class="y-accordion__group-color">
+                                        <span class="color"></span>
+                                        <input type="text" name="color" id="color" placeholder="#000000">
+                                    </div>
+                                </div>
+                                <div class="y-accordion__group">
+                                    <div class="y-accordion__group-text">Placement</div>
+                                    <div class="y-accordion__group-dropdown">
+                                        <a data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" data-amount="2">
+                                            <span>Center</span>
+                                            <img src="./img/arrow.svg" alt="arrow">
+                                        </a>
+                                        <ul class="dropdown-menu">
+                                            <li>
+                                                <a href="#">Right</a>
+                                            </li>
+                                            <li>
+                                                <a href="#">Left</a>
+                                            </li>
+                                            <li>
+                                                <a href="#">Top</a>
+                                            </li>
+                                            <li>
+                                                <a href="#">Bottom</a>
+                                            </li>
+                                        </ul>
+                                    </div>
                                 </div>
                             </div>
-                            <div class="y-accordion__group">
-                                <div class="y-accordion__group-text">Defaul Text Color</div>
-                                <div class="y-accordion__group-color">
-                                    <span class="color"></span>
-                                    <input type="text" name="color" id="color" placeholder="#000000">
+                            <!--/.accordion-content-->
+                        </div>
+
+                        <div class="y-accordion__item">
+                            <div class="article-title y-accordion__title">Image</div>
+                            <div class="accordion-content y-accordion__content">
+                                <div class="y-accordion__group">
+                                    <div class="y-accordion__group-text">Color</div>
+                                    <div class="y-accordion__group-color">
+                                        <span class="color"></span>
+                                        <input type="text" name="color" id="color" placeholder="#000000">
+                                    </div>
+                                </div>
+                                <div class="y-accordion__group">
+                                    <div class="y-accordion__group-text">Defaul Text Color</div>
+                                    <div class="y-accordion__group-color">
+                                        <span class="color"></span>
+                                        <input type="text" name="color" id="color" placeholder="#000000">
+                                    </div>
+                                </div>
+                                <div class="y-accordion__group">
+                                    <div class="y-accordion__group-text">Trigger Color</div>
+                                    <div class="y-accordion__group-color">
+                                        <span class="color"></span>
+                                        <input type="text" name="color" id="color" placeholder="#000000">
+                                    </div>
+                                </div>
+                                <div class="y-accordion__group">
+                                    <div class="y-accordion__group-text">Placement</div>
+                                    <div class="y-accordion__group-dropdown">
+                                        <a data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" data-amount="2">
+                                            <span>Center</span>
+                                            <img src="./img/arrow.svg" alt="arrow">
+                                        </a>
+                                        <ul class="dropdown-menu">
+                                            <li>
+                                                <a href="#">Right</a>
+                                            </li>
+                                            <li>
+                                                <a href="#">Left</a>
+                                            </li>
+                                            <li>
+                                                <a href="#">Top</a>
+                                            </li>
+                                            <li>
+                                                <a href="#">Bottom</a>
+                                            </li>
+                                        </ul>
+                                    </div>
                                 </div>
                             </div>
-                            <div class="y-accordion__group">
-                                <div class="y-accordion__group-text">Trigger Color</div>
-                                <div class="y-accordion__group-color">
-                                    <span class="color"></span>
-                                    <input type="text" name="color" id="color" placeholder="#000000">
-                                </div>
-                            </div>
-                            <div class="y-accordion__group">
-                                <div class="y-accordion__group-text">Placement</div>
-                                <div class="y-accordion__group-dropdown">
-                                    <a data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" data-amount="2">
-                                        <span>Center</span>
-                                        <img src="./img/arrow.svg" alt="arrow">
-                                    </a>
-                                    <ul class="dropdown-menu">
-                                        <li>
-                                            <a href="#">Right</a>
-                                        </li>
-                                        <li>
-                                            <a href="#">Left</a>
-                                        </li>
-                                        <li>
-                                            <a href="#">Top</a>
-                                        </li>
-                                        <li>
-                                            <a href="#">Bottom</a>
-                                        </li>
-                                    </ul>
-                                </div>
-                            </div>
-                        </div><!--/.accordion-content-->
+                            <!--/.accordion-content-->
+                        </div>
+
                     </div>
-                  
-                </div><!--/#accordion-->
+                    <!--/#accordion-->
+                </div>
             </div>
         </div>
     </div>
 
-    <script
-  src="https://code.jquery.com/jquery-3.4.1.min.js"
-  integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo="
-  crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
 
