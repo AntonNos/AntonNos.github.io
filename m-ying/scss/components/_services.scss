@@ -104,6 +104,7 @@
         display: flex;
         flex-wrap: wrap;
         #{$s}__item {
+            position: relative;
             padding: 55px 70px 65px;
             width: calc(100% / 3);
             text-align: center;
@@ -116,34 +117,105 @@
                 width: 100%;
             }
             &:nth-child(1) {
-                border-bottom: 1px solid;
-                border-image: linear-gradient(-90deg, rgba(128, 128, 128, 0.2), #fff) 1 round round;
+                &::before {
+                    content: '';
+                    position: absolute;
+                    display: block;
+                    left: 0;
+                    bottom: 0;
+                    width: 100%;
+                    height: 1px;
+                    background: linear-gradient(-90deg, rgba(128, 128, 128, 0.2), #fff);
+                }
+                &::after {
+                    content: '';
+                    position: absolute;
+                    display: block;
+                    right: 0;
+                    bottom: 0;
+                    width: 1px;
+                    height: 100%;
+                    background: linear-gradient(45deg, rgba(128, 128, 128, 0.2), #fff);
+                }
                 @media (max-width: 767px) {
-                    border: 0;
+                    &::before, 
+                    &::after {
+                        display: none;
+                    }
                 }
             }
             &:nth-child(3) {
-                border-bottom: 1px solid;
-                border-image: linear-gradient(90deg, rgba(128, 128, 128, 0.2), #fff) 1 round round;
+                &::before {
+                    content: '';
+                    position: absolute;
+                    display: block;
+                    left: 0;
+                    bottom: 0;
+                    width: 100%;
+                    height: 1px;
+                    background: linear-gradient(90deg, rgba(128, 128, 128, 0.2), #fff);
+                }
                 @media (max-width: 767px) {
-                    border: 0;
+                    &::before, 
+                    &::after {
+                        display: none;
+                    }
                 }
             }
             &:nth-child(2) {
-                border: 1px solid;
-                border-top: 0;
-                border-image: linear-gradient(0, rgba(128, 128, 128, 0.2), #fff) 1 round round;
+                &::before {
+                    content: '';
+                    position: absolute;
+                    display: block;
+                    left: 0;
+                    bottom: 0;
+                    width: 100%;
+                    height: 1px;
+                    background: linear-gradient(180deg, rgba(128, 128, 128, 0.3), #fff);
+                }
+                &::after {
+                    content: '';
+                    position: absolute;
+                    display: block;
+                    right: 0;
+                    bottom: 0;
+                    width: 1px;
+                    height: 100%;
+                    background: linear-gradient(45deg, rgba(128, 128, 128, 0.2), #fff);
+                }
                 @media (max-width: 767px) {
-                    border: 0;
+                    &::before, 
+                    &::after {
+                        display: none;
+                    }
                 }
             }
             &:nth-child(5) {
-                border: 1px solid;
-                border-top: 0;
-                border-bottom: 0;
-                border-image: linear-gradient(180deg, rgba(128, 128, 128, 0.2), #fff) 1 round round;
+                &::after {
+                    content: '';
+                    position: absolute;
+                    display: block;
+                    right: 0;
+                    bottom: 0;
+                    width: 1px;
+                    height: 100%;
+                    background: linear-gradient(180deg, rgba(128, 128, 128, 0.2), #fff);
+                }
+                &::before {
+                    content: '';
+                    position: absolute;
+                    display: block;
+                    left: -1px;
+                    bottom: 0;
+                    width: 1px;
+                    height: 100%;
+                    background: linear-gradient(180deg, rgba(128, 128, 128, 0.2), #fff);
+                }
                 @media (max-width: 767px) {
-                    border: 0;
+                    &::before, 
+                    &::after {
+                        display: none;
+                    }
                 }
             }
             &:not(:last-child) {
