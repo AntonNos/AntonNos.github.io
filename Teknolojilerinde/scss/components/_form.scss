@@ -1,0 +1,35 @@
+.t-form {
+  position: relative;
+  max-width: 502px;
+  width: 100%;
+
+  &__input {
+    width: 100%;
+    border: 0;
+    outline: none;
+    padding: 18px 174px 18px 32px;
+    background-color: $c_white;
+    color: $c_black;
+    line-height: 2.3;
+    border-radius: 8px;
+    box-sizing: border-box;
+
+    &::placeholder {
+      color: rgba($c_black, 0.4);
+    }
+  }
+
+  &__submit {
+    position: absolute;
+    right: 6px;
+    top: 50%;
+    transform: translateY(-50%);
+    border: 0;
+    outline: none;
+    padding: 12px 38px;
+    background-color: $c_red;
+    color: $c_white;
+    border-radius: 8px;
+    line-height: 2.3;
+  }
+}

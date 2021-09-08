@@ -1,0 +1,44 @@
+.t-header {
+  $h: &;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  padding: 35px 0;
+  transition: 0.3s all;
+  z-index: 10;
+
+  &.scrolled {
+    padding: 12px 0;
+    background-color: $c_dark_bg;
+
+    #{$h}__menu {
+      a {
+        color: $c_white;
+      }
+    }
+  }
+
+  &__nav {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+  }
+  &__menu {
+    display: flex;
+    align-items: center;
+    margin: 0 -20px;
+    padding-right: 40px;
+
+    li {
+      padding: 0 20px;
+    }
+
+    a {
+      font-size: 14px;
+      font-weight: 700;
+      text-decoration: none;
+      color: $c_black;
+      transition: 0.3s all;
+    }
+  }
+}

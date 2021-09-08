@@ -1,0 +1,48 @@
+body {
+  -webkit-font-smoothing: antialiased;
+  font-family: 'Manrope';
+  font-weight: normal;
+  font-size: 16px;
+  color: $c_text_body;
+}
+
+h1,
+.h1 {
+  font-size: 64px;
+  font-weight: 700;
+  line-height: 1.26;
+  color: $c_black;
+}
+
+h2,
+.h2 {
+  font-size: 64px;
+  font-weight: 600;
+  line-height: 1.18;
+  color: $c_text_title;
+}
+
+h3,
+.h3 {
+  font-size: 48px;
+  font-weight: 700;
+  line-height: 1.33;
+  color: $c_text_title;
+}
+
+p {
+  line-height: 2;
+
+  &.text-medium {
+    font-size: 18px;
+    line-height: 1.77;
+    font-weight: 500;
+    color: $c_black;
+  }
+
+  &.text-large {
+    font-size: 20px;
+    line-height: 1.8;
+    color: $c_black;
+  }
+}

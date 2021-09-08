@@ -1,0 +1,39 @@
+.t-clients {
+  text-align: center;
+  background-color: $c_grey_bg;
+  padding: 60px 0 48px;
+
+  &__inner {
+    max-width: 950px;
+    margin: 0 auto;
+  }
+
+  &__title {
+    margin-bottom: 5px;
+  }
+
+  &__description {
+    margin-bottom: 36px;
+  }
+
+  &__list {
+    display: flex;
+    align-items: center;
+    margin: 0 -12px;
+  }
+
+  &__list-inner {
+    width: 20%;
+    padding: 0 12px;
+
+    a {
+      margin: 12px 0;
+      border-radius: 16px;
+      overflow: hidden;
+      box-shadow: 0px 30px 40px rgba(212, 217, 232, 0.2);
+    }
+    img {
+      max-width: 170px;
+    }
+  }
+}
